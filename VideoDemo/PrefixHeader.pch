@@ -1,0 +1,70 @@
+//
+//  PrefixHeader.pch
+//  VideoDemo
+//
+//  Created by biyuhuaping on 2017/5/3.
+//  Copyright © 2017年 biyuhuaping. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define MAS_SHORTHAND
+#import "Masonry.h"
+
+#define GET_SCREEN_SCALE(scale) CGFloat scale = SCREEN_WIDTH /375.0f;
+
+
+/*
+ ==========================================log=================================================
+ */
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DLog(...)
+#endif
+
+
+
+
+/*
+ ========================================== color =================================================
+ */
+// RGB颜色转换（16进制->10进制）
+#define UIColorFromRGB(rgbValue,alphaValue)\
+\
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:(float)(alphaValue)]
+
+/*
+ ==========================================获取屏幕大小与设备类型宏=================================================
+ */
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+
+/*
+ ==========================================弱引用=================================================
+ */
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+/*
+ ==========================================国际化语言=================================================
+ */
+#define LZLocalizedString(key, comment) \
+[[NSBundle mainBundle] localizedStringForKey:(key) value:comment table:@"Localizable"]
+
+
+/*
+ ==========================================视频相关=================================================
+ */
+
+#define MIN_VIDEO_DUR   3.0f
+#define MAX_VIDEO_DUR   15.0f
+#define VIDEO_FOLDER    @"videos"
+
+
+
+#endif /* PrefixHeader_pch */

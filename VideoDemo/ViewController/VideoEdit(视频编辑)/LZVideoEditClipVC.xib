@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LZVideoEditClipVC">
+            <connections>
+                <outlet property="collectionView" destination="HqY-y0-qrC" id="qCF-w8-5OK"/>
+                <outlet property="hintLabel" destination="xMb-1e-kRb" id="nI0-cd-CBU"/>
+                <outlet property="lzCopyButton" destination="huv-mn-5XT" id="FO2-Ka-lSh"/>
+                <outlet property="lzDeleteButton" destination="wfT-kS-Xzs" id="i3V-gR-h2R"/>
+                <outlet property="lzVoiceButton" destination="sqn-xh-d30" id="LAN-89-fRN"/>
+                <outlet property="progressBar" destination="ebS-1B-Vpw" id="HKG-wd-JyY"/>
+                <outlet property="trimmerView" destination="xC6-nN-6Hu" id="IT2-7f-hIL"/>
+                <outlet property="videoPlayerView" destination="KsQ-Dl-A1u" id="dkd-sz-BC7"/>
+                <outlet property="view" destination="6zu-AM-1rd" id="DuD-Bx-KSM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6zu-AM-1rd">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KsQ-Dl-A1u" customClass="SCVideoPlayerView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="KsQ-Dl-A1u" secondAttribute="height" multiplier="1:1" id="DUx-lq-2DI"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebS-1B-Vpw" customClass="ProgressBar">
+                    <rect key="frame" x="0.0" y="375" width="375" height="8"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="ebS-1B-Vpw" secondAttribute="height" multiplier="375:7.5" id="3KX-pq-lQ6"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="huv-mn-5XT">
+                    <rect key="frame" x="0.0" y="607" width="94" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="5TM-UP-Tku"/>
+                    </constraints>
+                    <state key="normal" image="lz_videoedit_copy"/>
+                    <state key="highlighted" image="lz_videoedit_copy"/>
+                    <connections>
+                        <action selector="lzCopyButtonAction:" destination="-1" eventType="touchUpInside" id="IRA-Ej-QyI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqn-xh-d30">
+                    <rect key="frame" x="141" y="607" width="94" height="60"/>
+                    <state key="normal" image="lz_videoedit_voice_on"/>
+                    <connections>
+                        <action selector="lzVoiceButtonAction:" destination="-1" eventType="touchUpInside" id="lMu-G2-yys"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfT-kS-Xzs">
+                    <rect key="frame" x="281" y="607" width="94" height="60"/>
+                    <state key="normal" image="lz_videoedit_delete"/>
+                    <connections>
+                        <action selector="lzDeleteButtonAction:" destination="-1" eventType="touchUpInside" id="er6-3N-ZtH"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMb-1e-kRb">
+                    <rect key="frame" x="188" y="334" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HqY-y0-qrC">
+                    <rect key="frame" x="0.0" y="472" width="375" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="ksD-pH-O8Y"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="94Q-vi-X2T">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="R8F-7T-x8K"/>
+                        <outlet property="delegate" destination="-1" id="IZ8-bS-GD0"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xC6-nN-6Hu" customClass="SAVideoRangeSlider">
+                    <rect key="frame" x="0.0" y="403" width="375" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="5Xt-w1-5oC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="huv-mn-5XT" secondAttribute="bottom" id="25V-8t-EYN"/>
+                <constraint firstItem="sqn-xh-d30" firstAttribute="centerX" secondItem="6zu-AM-1rd" secondAttribute="centerX" id="49d-M8-Rcc"/>
+                <constraint firstItem="ebS-1B-Vpw" firstAttribute="leading" secondItem="6zu-AM-1rd" secondAttribute="leading" id="4Cm-Tz-Zxy"/>
+                <constraint firstItem="KsQ-Dl-A1u" firstAttribute="top" secondItem="6zu-AM-1rd" secondAttribute="top" id="4JI-2k-tma"/>
+                <constraint firstAttribute="bottom" secondItem="sqn-xh-d30" secondAttribute="bottom" id="7PM-8x-jEF"/>
+                <constraint firstItem="sqn-xh-d30" firstAttribute="width" secondItem="huv-mn-5XT" secondAttribute="width" id="BF9-Wk-wac"/>
+                <constraint firstAttribute="bottom" secondItem="wfT-kS-Xzs" secondAttribute="bottom" id="BsX-Eq-v9Y"/>
+                <constraint firstItem="huv-mn-5XT" firstAttribute="width" secondItem="6zu-AM-1rd" secondAttribute="width" multiplier="1:4" id="CAZ-MH-6kz"/>
+                <constraint firstAttribute="trailing" secondItem="xC6-nN-6Hu" secondAttribute="trailing" id="EdZ-tI-kSr"/>
+                <constraint firstItem="KsQ-Dl-A1u" firstAttribute="leading" secondItem="6zu-AM-1rd" secondAttribute="leading" id="GOa-rZ-w49"/>
+                <constraint firstItem="HqY-y0-qrC" firstAttribute="top" secondItem="xC6-nN-6Hu" secondAttribute="bottom" constant="20" id="LOI-p4-JHH"/>
+                <constraint firstItem="ebS-1B-Vpw" firstAttribute="top" secondItem="KsQ-Dl-A1u" secondAttribute="bottom" id="Ncm-QX-bOj"/>
+                <constraint firstAttribute="trailing" secondItem="KsQ-Dl-A1u" secondAttribute="trailing" id="NxS-Bv-BM2"/>
+                <constraint firstItem="wfT-kS-Xzs" firstAttribute="width" secondItem="huv-mn-5XT" secondAttribute="width" id="PhW-u2-uVF"/>
+                <constraint firstItem="huv-mn-5XT" firstAttribute="leading" secondItem="6zu-AM-1rd" secondAttribute="leading" id="Uxw-tA-TD6"/>
+                <constraint firstItem="xC6-nN-6Hu" firstAttribute="leading" secondItem="6zu-AM-1rd" secondAttribute="leading" id="VHn-Hd-col"/>
+                <constraint firstItem="xC6-nN-6Hu" firstAttribute="top" secondItem="ebS-1B-Vpw" secondAttribute="bottom" constant="20" id="els-o3-atF"/>
+                <constraint firstItem="xMb-1e-kRb" firstAttribute="centerY" secondItem="6zu-AM-1rd" secondAttribute="centerY" id="fMp-H8-9iF"/>
+                <constraint firstItem="HqY-y0-qrC" firstAttribute="leading" secondItem="6zu-AM-1rd" secondAttribute="leading" id="hOv-ch-Adk"/>
+                <constraint firstAttribute="trailing" secondItem="ebS-1B-Vpw" secondAttribute="trailing" id="hwC-8c-OZj"/>
+                <constraint firstItem="wfT-kS-Xzs" firstAttribute="height" secondItem="huv-mn-5XT" secondAttribute="height" id="lTb-JH-CNe"/>
+                <constraint firstAttribute="trailing" secondItem="HqY-y0-qrC" secondAttribute="trailing" id="pUY-ft-AWR"/>
+                <constraint firstAttribute="trailing" secondItem="wfT-kS-Xzs" secondAttribute="trailing" id="qcZ-RM-fEG"/>
+                <constraint firstItem="sqn-xh-d30" firstAttribute="height" secondItem="huv-mn-5XT" secondAttribute="height" id="vHq-r5-4R2"/>
+                <constraint firstItem="xMb-1e-kRb" firstAttribute="centerX" secondItem="6zu-AM-1rd" secondAttribute="centerX" id="vTr-5B-ABA"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lz_videoedit_copy" width="20" height="19"/>
+        <image name="lz_videoedit_delete" width="20" height="20"/>
+        <image name="lz_videoedit_voice_on" width="20" height="17"/>
+    </resources>
+</document>

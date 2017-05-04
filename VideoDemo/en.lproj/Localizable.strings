@@ -1,0 +1,491 @@
+/* 
+  Localizable.strings
+  VideoDemo
+
+  Created by biyuhuaping on 2017/5/3.
+  Copyright © 2017年 biyuhuaping. All rights reserved.
+*/
+
+// ******************************** 通用 ********************************
+"modify" = "Modify";        //修改
+"next" = "Next";            // 下一步
+"add" = "Add";              // 添加
+"save" = "Save";            // 保存
+"cancel" = "Cancel";        // 取消
+"confirm" = "Confirm";      //确定
+"taste" = "Taste";          // 口味最好
+"atmosphere" = "Atmosphere";// 环境最好
+"service" = "Service";      // 服务最好
+"rating" = "Rating";        // 评分
+"changelanguage_relogin" = "The system language has been changed, please relogin Laziz!-M APP and continue to use it.";    // 系统语言改变了，请重新启动app
+"iphone_permissions_go_setting" = "Go to settings";     // 去设置
+"iphone_permissions_address_remind" = "Please go to  'phone settings', and  enable location for Laziz!-M";    // 请在手机系统设置中开启定位服务
+"iphone_permissions_album_remind" = "Please go to  'phone settings', and  enable photos for Laziz!-M";    // 请在手机系统设置中开启照片服务
+"iphone_permissions_camera_remind" = "Please go to  'phone settings', and  enable camera for Laziz!-M";   // 请在手机系统设置中开启相机服务
+"iphone_permissions_notification_remind" = "Please go to  'phone settings', and  enable notifications for Laziz!-M";  // 请在手机系统设置中开启通知服务
+"iphone_download_google_map" = "Please download Google Map APP.";       // 请下载Google Map APP.
+"video_play_failed" = "Failed to load video, please try again"; //视频加载失败
+"refresh_loading" = "loading…";  // 加载中…
+
+"refresh_header_pull_down" = "Pull down to refresh";    // 下拉刷新
+"refresh_header_release_to_refresh" = "Release to refresh"; // 松开手指刷新内容F
+
+"refresh_footer_pull_up" = "Tap or pull up to load more";   // 点击或上拉加载更多
+"refresh_footer_no_data" = "Sorry, there is no data."; // 抱歉，没有数据
+"refresh_footer_no_more_data" = "No more data"; // 没有更多的内容
+
+"leading_button_start" = "Start";               // 引导页的Start按钮
+"switch_on" = "ON"; // 已开启
+"switch_off" = "OFF";   // 未开启
+
+// ******************************** 首页 ********************************
+"home_menu_new_promotion" = "New promotion";    // 发优惠
+"home_menu_customer_checkout" = "Customer checkout";    // 结账
+"home_menu_manage_staff" = "Manage staff";      // 员工管理
+"home_menu_manage_coupons" = "Manage coupons";          // 优惠管理
+"home_menu_manage_reviews" = "Manage reviews";  // 评论管理
+"home_menu_manage_pictures" = "Manage pictures";    // 照片管理
+"home_menu_manage_orders" = "Manage orders";    // 订单管理
+"home_menu_financial_records" = "Financial records";    // 财务结款
+"home_menu_my_account" = "My account";          // 个人中心
+"home_menu_message_center" = "Message center";  // 消息中心
+
+// ******************************** 商户认证 ********************************
+
+// ******************************** 已认证首页 ********************************
+
+// ******************************** 已认证-发优惠 ********************************
+"video_details" = "Video details";       //视频详情
+"edit_video" = "Edit video";             //编辑视频
+"edit_done" = "Done";              //编辑完成
+"select_video" = "Select video";         //选择视频
+"trim_crop" = "Trim & Crop";               //整修和裁剪
+"all_video_delete" = "All videos have been deleted.";//所有视频已删除
+"create_promotion" = "Create promotion"; //设置优惠
+"copon" = "Coupon";         //优惠券
+"edit_promotion" = "Edit promotion";    //编辑优惠
+"edit_message" = "Video length is more than 15 seconds. Please trim it and try again.";//视频长度超过15秒，请裁剪后重试
+
+"please_enter_promotion_name" = "Please enter promotion name";      //请设置优惠标题
+"please_enter_ingredients_components" = "Please enter the ingredients/components names, separated by commas.";//请填写食材/菜品名称，并用半角逗号（，）隔开多
+"please_enter_tags" = "Please write tag(s) separated by commas.";   //请填写标签，并用半角逗号（，）隔开多个选项
+"please_enter_description" = "Please enter a description for the promotion";    //请填写优惠的简介内容
+"please_enter_coupon_name" = "Please enter coupon name";        //请填写优惠券名称
+"please_enter_coupon_amount" = "Please enter coupon amount";    //请填写金额
+"please_enter_coupons_to_issue" = "Please enter how many coupons you want to issue";    //请填写发放张数
+"coupon_valid_conditions" = "Coupon valid for bills over xx BHD";//消费满xxBHD使用
+
+"group_order_title" = "Group order";  //团购
+
+"from_time" = "From 00:00"; //选择开始时间
+"to_time" = "To 00:00";//选择结束时间
+"start_date" = "Start date";//选择开始日期
+"finish_date" = "Finish date";//选择结束日期
+
+"please_enter_group_name" = "Please enter group order name";    //请填写团购名称
+"please_enter_an_object" = "Enter an object"; //请选择团购内容
+"please_enter_member_quantity" = "Please enter member quantity"; //请填写份数
+"please_enter_group_price" = "Please enter group order price";//请填写团购金额
+"please_enter_group_number_people" = "Please enter number of members required"; //请填写成团需要的人数
+"select_group_deadline" = "Select group deadline";      //选择成团截止时间
+"select_expiration_date" = "Select expiration date";    //选择活动过期日期
+
+"please_select_the_date" = "Please set the date when the promotion doesn't apply";   //请设置活动不涉及的日期
+"please_need_to_book" = "No need to book, in peak hours may need to queue"; //无需预约，消费高峰时可能需要等位
+"please_other_conditions" = "Not reimbursable, no change, etc.";//不兑现，不找零
+
+"group_price_msg" = "Group order price must not be higher than Original price.";//团购价大于原价，是否修改？
+
+"msg_enter_ingredients_components"="Please fill in Ingredients / components.";//请填写食材/菜品
+"msg_enter_tags"="Please fill in Tag(s).";//请填写标签
+"msg_enter_description"="Please fill in Description.";//请填写优惠的简介内容
+
+"msg_enter_coupon_name"="Please fill in Name of Coupon.";//请填写优惠券的名称
+"msg_enter_coupon_amount"="Please fill in Coupon amount of Coupon.";//请填写优惠券的优惠金额
+"msg_enter_coupon_subsidy_provider"="Please select Subsidy provider of Coupon.";//请选择优惠券的补贴来源
+"msg_enter_coupon_to_issue"="Please fill in Coupons to issue of Coupon.";//请填写优惠券的发放张数
+"msg_enter_valid_from_to"="Please set Valid from/to of Coupon.";//请设置优惠券的有效期
+"msg_enter_couopon_everyday_valid"="Please set Everyday valid of Coupon.";//请设置优惠券的每天时间
+
+"msg_enter_group_order_name"="Please fill in Name of Group order.";//请填写团购的名称
+"msg_enter_group_order_select"="Please fill in Object of the group order of Group order.";//请填写团购的团购内容
+"msg_enter_group_price"="Please fill in Group order price of Group order.";//请填写团购的团购价
+"msg_enter_group_subsidy_provider"="Please select Subsidy provider of Group order.";//请选择团购的补贴来源
+"msg_enter_group_people_number"="Please fill in Members required of Group order.";//请填写团购的人数要求
+"msg_enter_group_finish_date"="Please set Finish time of Group order.";//请设置团购的结束时间
+"msg_enter_group_expiration_date"="Please set Expiration date of Group order.";//请设置团购的过期时间
+"msg_enter_group_everyday_valid"="Please set Everyday valid of Group order.";//请设置团购的每天时间
+
+"mag_coupon_start_date" = "Start date must be later than today.";//优惠券有效期的开始日期如果早于今天的日期，弹出的提示
+"mag_coupon_finish_date" = "Finish date must be later than today. ";//优惠券有效期的结束日期如果早于今天的日期，弹出的提示
+"msg_coupon_finish_start_date" = "Finish date must be later than Start date.";//优惠券有效期的结束日期如果早于开始日期，弹出的提示
+
+"mag_gorup_finish_date" = "Finish time must be later than today.";//团购的结束时间如果早于今天，弹出的提示
+"mag_coupon_expiration_date" = "Expiration date must be later than today.";//团购的过期如果早于今天，弹出的提示
+"msg_coupon_finish_expiration_date" = "Expiration date must be later than Finish time.";//优惠券有效期的结束日期如果早于开始日期，弹出的提示
+
+"msg_select_start_date" = "Please set Start date first.";//请先选择开始日期
+"msg_select_finish_date" = "Please set Finish time first.";//请先选择结束时间
+
+"mag_coupon_mamount" = "Coupon amount must be greater than 0 less than 10"; //优惠金额应大于0小于10
+"mag_coupon_issue" = "Coupons to issue must be greater than 0 less than 100";//发放张数应大于0小于100
+"mag_group_price" = "Group order price must be greater than 0 less than 100";//团购价应大于0小于100
+"msg_people_num" = "Members required must be greater than 1 less than 51";//人数要求应大于0小于51
+"msg_original_price" = "Original price must be greater than 0 less than 100";//原价应大于0小于100
+
+// ******************************** 结账 ********************************
+"checkout_scan_coupon" = "Scan coupon"; // 扫描优惠
+"checkout_scan_qrcode_remind" = "Please put the QR code into the frame to scan automatically"; // 请将二维码放入取景框中即可自动扫描
+"checkout_scan_error_remind" = "Unable to identify code, please try again.";   // 无法识别二维码
+"checkout_scan_again" = "Scan again";  // 重新扫描
+"checkout_cannot_use_promotion_remind" = "Can't use this coupon, please scan again.";   // 无法使用此优惠，请重新扫描
+"checkout_short_time_remind" = "Can't generate order, because the customer used a coupon short time ago.";  // 生成订单失败，因为距离用户上次优惠买单时间太短
+"checkout_invalid_time_range" = "Can't use this coupon, because it is not in the valid time range now.";    // 商家优惠不在优惠时间内，不能使用
+"checkout_generate_order_failed_remind" = "Failed to generate order, please scan again.";   //生成订单失败，请重新扫描二维码
+"time" = "Time";   //财务列表 时间
+"serial_number" = "Serial number"; //财务列表 流水号
+"amount" = "Amount";  //财务列表.金额
+
+// ******************************** 员工管理 ********************************
+"staff_account_have" = "Account already exists"; //用户名已经存在
+
+// ******************************** 优惠管理 ********************************
+"group_members_required" = "Members required :"; // 人数要求：xx人
+"group_deadline" = "Deadline";          // 结束时间
+"group_terms_of_use" = "Terms of use";  // 使用规则
+"group_valid_until"= "Valid until";     // 过期时间(团购优惠的结束时间)
+"group_meal_time" = "Meal time";        // 用餐时间
+"group_publisher" = "Publisher";        // 发布商家
+"mine_coupons_finsh_time" = "Finish time:";              // 结束时间(参加团购的结束时间)
+"mine_coupons_expiration_date" = "Expiration date:";     // 过期时间(使用团购券的结束时间)
+"mine_coupons_validity_period" = "Validity Period:";     // 有效期
+"mine_coupons_valid_except" = "Coupon not valid on:";           // 例外日期
+"mine_coupons_everyday_valid" = "Everyday valid:";      // 每天时间(每天可以使用优惠券的时间)
+"group_order_rules" = "Group order rules";    // 拼团规则(参加团购的规则)
+"not_submitted" = "Not submitted";   //未提交
+"waiting_for_publishing" = "Waiting for publishing"; //未发布
+"published" = "Published";  //已经发布
+"finished" = "Finished"; //已经下架
+"remaining_time" = "Remaining time";  //剩余时间
+"saved" = "Saved"; //已经保存
+"rejected" = "Rejected";//已经驳回
+"waiting_for_approval" = "Waiting for approval"; //等待审核
+"approved" = "Approved"; //审核通过
+"delete" = "DELETE";   //删除
+"edit" = "EDIT"; //编辑
+"edit_min" = "Edit";
+"submit" = "SUBMIT"; //提交
+"publish" = "PUBLISH"; //发布
+"finish" = "FINISH"; //下线
+"copy" = "COPY";
+"waiting_for_approval_big" = "WAITING FOR APPROVAL"; //等待发布大写
+"ingredients_components" = "Ingredients/components:"; //食材.菜品
+"tags" = "Tag(s):"; //标签
+"description" = "Description:";//简介
+"name" = "Name:";  //团购 优惠券名字
+"coupon_amount_range" = "Coupon amount:"; //优惠金额幅度
+"conditions" = "Conditions:"; //使用条件
+"coupons_to_issue" = "Coupons to issue:"; //发放张数
+"valid_from_to" = "Valid from/to:"; //有效期
+"coupon_not_valid_on" = "Coupon not valid on:"; //优惠券不适用于...
+"everyday_valid" = "Everyday valid:"; //每日使用时间
+"need_to_book_in_advance" = "Need to book in advance:"; //预约提醒
+"other_conditions" = "Other conditions:" ;//其他规则提醒
+"object_of_the_group_order" = "Object of the group order:"; //团购内容
+"original_price" = "Original price:"; //原来的价格
+"group_order_price" = "Group order price:"; //团购价格
+"required_people" = "Members required:"; //人数要求
+"finish_time" = "Finish time:";//结束时间
+"expiration_date" = "Expiration date:"; //过期时间
+"coupon_not_valid_on" = "Coupon not valid on:"; //团购不适用于..
+"submit_min" = "Submit"; //提交--小写
+"publish_min" = "Publish"; //发布--小写
+"finish_min" = "Finish"; //下线--小写
+"copy_min" = "Copy";  //复制--小写
+"edit_min" = "Edit"; //编辑 小写
+"alert_delete_coupon" = "Are you sure you want to delete all selected promotions?"; //删除优惠
+"alert_submit_coupon" = "Are you sure you want to submit all selected promotions?"; //提交优惠
+"alert_finish_coupon" = "Are you sure you want to finish all selected  promotions?"; //下线优惠
+"alert_publish_coupon" = "Are you sure you want to publish all selected promotions?"; //发布优惠
+"fund_provider" = "Subsidy provider:"; //补贴来源
+"group_order_details" = "Group order details";//优惠列表 团购详情
+"coupon_details" = "Coupon details"; //优惠列表 优惠详情
+"quatity_of_groups_formed" = "Quantity of coupons taken:";//剩余数量
+"time_remaining" = "Time remaining:"; //剩余时间
+"quatity_remaining" = "Quatity remaining:"; //剩余数量
+
+
+// ******************************** 评论管理 ********************************
+"review_rating_rules" = "Rating rules";             // 评分规则
+"review_videos" = "Videos";                         // 视频
+"review_restaurant" = "Restaurant";                 // 餐厅
+"review_norating_now" = "No rating now";            // 暂无评分
+"review_total_points" = "Total points:";            // 总分
+"review_all" = "All";               // 全部
+"review_good" = "Good";             // 好评
+"review_bad" = "Bad";               // 差评
+"review_reply" = "Reply";           // 回复
+"review_delete" = "Delete";         // 删除
+
+// ******************************** 照片管理 ********************************
+"res_photo_title" = "Manage photos"; //照片管理
+"res_photo_dishes" = "Dishes"; //菜
+"res_photo_atmosphere" = "Atmosphere"; //环境
+"res_photo_menu" = "Menu"; //菜单
+"error_over_max_count" = "Sorry, you can only upload 30 photos at most.";//上传照片超过30张的警告
+"error_over_max_count_5" = "Sorry, you can only upload 5 photos at most.";
+
+// ******************************** 订单管理 ********************************
+"coupon" = "Coupon:";     //优惠券名称
+"coupons" = "Coupons:";
+"group_order" = "Group order:";  //团购数量
+"coupon_id" = "Coupon ID:";  //优惠券id
+"coupon_amount" = "Coupon amount:"; //优惠券金额
+"customer" = "Customer:";  //消费者名称
+"time_of_use" = "Time of use:";  //使用时间
+"funds_provided" = "Subsidies provided?"; //是否结算
+"provision_time" = "Provision time:"; //结算时间
+"yes" = "YES";
+"not_yet" = "Not yet";
+
+// ******************************** 财务结款 ********************************
+"total_coupons_amount" = "Total coupons amount";  //优惠总金额
+"provided_funds" = "Provided subsidies";  //结算
+"funds_yet_to_provide" = "subsidies yet to provide";  //未结算
+"provision_details" = "Provision details";  //详情
+"account_period" = "Account period :";   //账户
+"payment_serial_number" = "Payment serial number :";  //支付账户线下
+"sender's_online_account" = "Sender's online account :"; //在线支付账户
+"provision_amount"  = "Provision amount :";  //金额
+"recipient's_bank" = "Recipient's bank :";  //收款银行
+"recipient's_full_name" = "Recipient's full name :"; //收款行全称
+"recipient's_bank_account" = "Recipient's bank account :"; //收款账户线下
+"recipient's_online_account" = "Recipient's online account :"; //在线收款账户
+"provider's_bank" = "Provider's bank :"; //付款银行
+"sender's_name" = "Sender's name :"; //付款名称
+"sender's_bank_account" = "Sender's bank account :"; //付款账户
+"provision_time_space" = "Provision time :"; //付款时间
+"remarks" = "Remarks :"; //备注
+
+// ******************************** 个人中心 ********************************
+
+"change_photo_title" = "Set your profile photo"; //您可以拍照或从相册中选择一张照片
+"change_takephoto" = "Take Photo";          //拍照
+"change_choosephoto" = "Choose Photo";      //选择照片
+"change_cancel" = "Cancel";                 //取消
+"change_password" = "Change password";      //修改密码
+"change_moblie" = "Change mobile phone";    //修改手机
+"change_setting" = "Change settings";   //修改
+"complete" = "Complete";
+"personal_set" = "Set"; //设置
+
+"about_us" = "About us";    //关于我们
+"setting" = "Settings";     //设置
+"share_app" = "Share app";  //分享app
+"rate_app" = "Rate app";    //评价app
+"contact_customer" = "Contact customer service";    //联系客服
+"personal_info" = "Personal information";           //个人信息
+
+"change_idcheck" = "ID check";      //身份验证
+"mobile_phone" = "Mobile phone";    //手机
+"change_verificode" = "Verification code"; //验证
+"change_link_newmobile" = "Link new mobile phone"; //绑定新手机
+"change_enter_current_mobile_number" = "Please enter current mobile number"; //请输入当前手机号
+"change_enter_verificode" = "Please enter verification code";
+"change_tip_message" = "Tip: \
+If you are unable to receive the verification code because the provided phone number is not accessible, please contact customer service to change it! Customer Service Contact: +86400-008-5691.";//温馨提示：如果因手机遗失或其它原因，无法使用已绑定的手机收取验证码，请联系客服人员
+"password" = "Password";            //密码
+"set_password" = "Set password";    //设置密码
+"enter_password" = "Please enter password";     //请输入密码
+"enter_password_6_chart" = "Please enter password (Min. 6 characters)"; // 请输入不少于6位字符的密码
+"old_password" = "Old password";    //  原密码
+"new_password" = "New password";    //  新密码
+"enter_old_password" = "Please enter old password"; // 请输入原有密码
+"enter_new_password" = "Please enter new password"; // 请输入新密码
+"nextstep" = "Next step";           //下一步
+"quit" = "Quit";                    // 退出
+
+"restaurant_info" = "Restaurant information";   //餐厅信息
+"restaurant_name" = "Restaurant name";          //餐厅名称
+"cuisine" = "Cuisine";                          //菜系
+"restaurant_address" = "Restaurant address";    //餐厅地址
+"map_location" = "Map location";                //地图位置
+"phone" = "Phone";                              //联系电话
+"open_time" = "Opening time"; //营业时间
+"cost_person" = "Cost/Person:";//人均消费
+"object_of_the_group_order_title" = "Object of the group order";      //团购内容
+"add_object_of_the_group" = "Add object of the group order";    //添加团购内容
+"edit_object_of_the_group" = "Edit object of the group order";  //编辑团购内容
+"enter_name" = "Please enter name";                   //请输入名字
+"original_price" = "Original price:";                  //价格
+"enter_original_price" = "Please enter original price";//请输入团购菜/套餐的名称
+"company_info" = "Company information";             //企业信息
+"company_name" = "Company name";                    //公司名称
+"business_lic" = "Business license";                //营业执照
+"payment_account" = "Account to receive payments:"; //收款账号
+
+"tip_message" = "Please contact XBN Customer Service to change the above information. \rTelephone:+86400-008-5691 \rEmail:service@xbniao.com"; //如需修改上述信息，请联系XBN客服。电话/邮箱
+"person_setting_not_setting" = "Notification Settings"; //通知
+"person_set_email" = "Set e-Mail"; //绑定邮箱
+"person_change_email" = "Change e-Mail"; //修改邮箱
+"person_old_email" = "Old e-Mail"; //老的邮箱
+"person_new_email" = "New e-Mail"; //新邮箱
+"person_enter_old_email" = "Please enter old e-Mail"; //请输入老邮箱
+"person_enter_new_email" = "Please enter new e-Mail"; //请输入新邮箱
+"person_enter_email_alert_text" = "Please enter at least 6 characters"; // 请至少输入6个字符
+"person_choose_restaurant_photo" = "Restaurant album"; //餐厅相册选择
+"person_bind_email_is_have" = "This e-mail is already linked,please provide another number!"; //邮箱已经被绑定过.请更改
+
+// ******************************** 设置、分享 ********************************
+
+"share_to_friend" = "Recommend to a friend";    //推荐给朋友
+"share_message" = "Messages";                   //短信
+"share_email" = "Mail";                         //邮件
+"share_twitter" = "Twitter";                    //twitter
+"share_facebook" = "Facebook";                  //facebook
+
+"share_success" = "Successfully shared!";       //分享成功！
+"share_fail" = "Failed to share!";              //分享失败！
+
+"share_app_title" = "I recommend you Laziz!-M – A wonderful APP to promote your restaurant."; // 推荐一个优惠用餐神器
+"share_content" = "I'm using Laziz!-M APP to publish food videos, promote my restaurant and attract more customers. You can try it too!"; //我正在使用Laziz!-M APP，发布美食优惠视频，宣传我店信息，招揽更多客户，你也可以试试：
+
+"setting_clear_cache" = "Clear cache";  // 清除缓存
+"setting_clearing" = "Clearing";        // 正在清除
+"setting_clear_success" = "Successfully Cleared"; // 清除成功
+"setting_clear_remind" = "Are you sure you want to clear cache?";  // 您确定要清除所有缓存数据吗
+"setting_button_clear" = "Clear";       // 清除
+"setting_report_problem" = "Report problem(s)"; // 意见反馈
+"setting_report_characters_remind" = "Please describe your problem (Max. 1000 characters)"; // 请输入您的反馈意见（字数1000字以内）
+"setting_about_us" = "About us";    // 关于我们
+"setting_report_quit_remind" = "You haven't completed the content, are you sure you want to quit?"; // 您的评价还未完成，您确定要离开吗？
+"setting_report_submit_success_remind" = "Successfully submitted!"; // 提交成功！
+"setting_notification_remind" = "If you want to enable/disable notifications for Laziz!, go to 'phone settings', find Laziz! and change the NOTIFICATION status.";  // 如果您要关闭或开启Laziz!的新消息通知，请在手机设置中，找到应用程序Laziz!，更改“通知”状态。
+"setting_new_message_notifications" = "New message notifications";  // 接收新消息通知
+
+// ******************************** 登录、注册 ********************************
+"terms_of_service" = "Terms of Service"; //服务协议
+"login_login" = "Login";   //登陆
+"login_register" = "Register"; //登陆
+"login_change_login_mode" = "More login mode"; //更多登录方式
+"login_loginnow" = "Login now";                             //立即登录
+"login_register" = "Register";                              //注册
+"login_enter_mobile" = "Please enter your mobile phone";    //请输入手机号码
+"login_enter_email" = "Please enter your e-Mail";           //请输入邮箱地址
+"login_get_verifi_code" = "Get verification code";          //获取验证码
+"login_verifi_code" = "Verification code";                  //验证码
+"login_password" = "Password";                              //密码
+"login_enter_verifi_code" = "Please enter verification code";   //请输入验证码
+"login_account_login" = "Login using account";              //账号和密码登录
+"login_mobile" = "Mobile phone";                            //手机号
+"login_mobile_email" = "Mobile phone/e-Mail";               //手机或email
+"register_termsofservice" = "I've read and agree with the "; //我已阅读并同意《用户使用协议》
+"forgot_password_msg" = "If you didn't link a phone number, please select an e-Mail for recovery";//若果您未绑定手机号，请选择邮箱找回
+"password_text" = "Password (Min. 6 characters)";//请输入不少于6位字符的密码
+"mag_account_stopstate" = "Sorry, your account has been disabled, please contact Customer Service \r Phone:+86400-008-5691 \r e-Mail:service@xbniao.com";
+
+"enter_invalid_mobile" = "Invalid mobile phone"; //请输入正确的手机号
+"enter_invalid_verifi" = "Invalid verification code"; //验证码错误
+"enter_invalid_password" = "Invalid mobile phone or password"; //密码错误
+"change_success" = "Successfully changed!";//修改成功
+"change_failed" = "Failed to change, please try again!";//修改失败
+"save_success" = "Successfully saved! ";//保存成功
+"save_failed" = "Failed to save, please try again!";//保存失败
+"auth_message" = "Laziz! Customer Service will contact you to complete restaurant authentication as soon as possible."; //Laziz!客服会尽快联系您完成认证！
+"auth_title_str" = "Easy to manage  Increase your profits!";
+"auth_button_str" = "Authenticate your business"; //马上认证
+
+"register_failed" = "Failed to register";//注册失败提示语
+"login_failed" = "Failed to login"; //登录失败提示语
+"account_failed" = "Invalid mobile phone or password"; //帐号或密码错误
+"failed_to_login" = "Failed to login"; // 邮箱或账号登陆失败
+"vificode_failed" = "Failed to get verification code, please try again!";
+"msg_change_mobile" = "Mobile phone successfully changed!";//恭喜您，绑定手机修改成功！
+"phone_is_register" = "Sorry, this phone number has been registered, please try another one!"; //注册时用的手机号已被注册的提示
+"reset_password_fail" = "Failed to reset password , please try again!"; //重置密码失败
+"please_reset_password_title" = "Please reset your password";
+"save_fail" = "Failed to save, please try again!";//保存失败	弹出框提示语
+"submit_fail" = "Upload failed, please submit again!";//提交失败
+"try_again" = "Try again";//重试
+"password_recovery" = "Password recovery"; //找回密码
+"read_and_agree_service" = "Please read and agree with the Terms of Service";  //请先阅读服务协议并同意
+"login_email" = "Email"; //邮箱登陆
+"login_mobile_phone_and_password" = "Mobile phone and password"; //手机和密码登陆
+"login_email_and_password" = "e-Mail/Account ID and password"; //邮箱和密码登陆
+"login_quick_login" = "Quick login";                        //快捷登录
+"login_alert_enter_eMail_address" = "Enter your eMail address"; //请输入邮箱地址
+"login_select_area_code" = "Select a country or region"; //城市编号选择
+"register_by_email" = "Register by e-Mail"; //使用邮箱注册
+"register_by_phone" = "Register by mobile phone"; //使用手机注册
+"recovery_password_phone" = "Please enter your mobile phone to receive verification code and set new password."; //请输入手机号找回密码
+"recovery_password_email" = "Please enter your e-Mail to receive verification code and set new password."; //请输入邮箱找回密码
+"recovery_reset_password" = "Please set new password (min. 6 characters)"; //请重新设置您的密码
+"login_email_or_account" = "e-Mail/Account ID"; //邮箱或用户站好登陆
+"login_please_enter_email_or_account" = "Please enter your e-Mail/Account ID"; //请输入邮箱地址或者用户名
+"login_email" = "e-Mail";
+"email_is_register" = "Sorry, this e-mail has been registered, please try another one!"; //注册时用的邮箱已被注册的提示
+"invalid_email_remind" = "Invalid e-mail"; //输入正确邮箱
+"send_code_maxnum_remind" = "Sorry, the verification code has been sent to the daily limit, please try again tomorrow."; // 抱歉，短信验证码发送次数已达每日上限，请明天再来
+
+// ******************************** 首页-员工管理 ********************************
+"manage_staff" = "Manage staff";  //员工管理列表
+"create_staff_member" = "Create staff member"; //创建新员工
+"staff_account" = "Account:";
+"enter_staff_member_account" = "Enter staff member account"; //输入员工账号
+"staff_password" = "Password:";
+"enter_staff_member_password" = "Enter staff member password"; //输入员工密码
+"staff_name" = "Name:";
+"enter_staff_member_name" = "Enter staff member name"; //输入员工姓名
+"staff_permission" = "Permission(s):";
+"staff_new_promotion" = "New promotion"; //员工管理开优惠的权限
+"staff_customer_checkout" = "Customer checkout"; //员工结账权限
+"staff_edit_staff_member" = "Edit staff member"; //修改员工信息标题
+"staff_delete_staff" = "Are you sure you want to delete this staff member?"; //是否删除员工
+
+
+// **************************************消息中心********************************
+"message_message_center" = "Message center"; //消息中心
+"message_system" = "System notifications"; //系统通知
+"message_restaurant_auth_regected" = "Your restaurant authentication has been rejected. Click to view.";//商户认证被驳回,请点击查看
+"message_restaurant_auth_success" = "Your restaurant authentication has been through audited. Click to view.";//商户认证通过
+"message_photos_delete" = "Some of your restaurant's photos has been deleted. Click to view."; //照片删除
+"message_new_review" = "Wrote a new review. Click to view."; //有新评论.点击查看
+"message_new_finical" = "There's a new financial record. Click to view.";// 有新的到账,请查看
+"message_review_details" = "Review details"; //评论详情
+"message_res_auth_success_exit" = "Please relogin Laziz!-M to apply the new settings."; //商家认证成功后. 退出app
+"message_eason_for_deletion" = "Reason for deletion:"; //照片删除原因
+
+//*****************************商户认证*************************************
+"res_auth_restaurant_authentication" = "Restaurant authentication"; //title
+"res_auth_restaurant_name" = "Restaurant name:";  //餐厅名称
+"res_auth_enter_your_restaurant_name" = "Please enter your restaurant name"; //请输入餐厅名称
+"res_auth_restaurant_info" = "Restaurant information"; //餐厅简介
+"res_auth_cuisine" = "Cuisine:"; //菜系
+"res_auth_restaurant_address" = "Restaurant address:"; //餐厅地址
+"res_auth_enter_restaurant_addredd" = "Please enter restaurant address"; //请输入餐厅地址
+"res_auth_map_location" = "Map location:"; //地图定位
+"res_auth_area" = "Area:"; //热门商区
+"res_auth_phone" = "Phone:"; //电话
+"res_auth_enter_phone" = "Please enter restaurant phone"; //请输入餐厅电话
+"res_auth_open_time" = "Open time:"; //营业时间
+"res_auth_company_info" = "Company information"; //公司简介
+"res_auth_company_name" = "Company name:"; //公司名称
+"res_auth_enter_company_name" = "Please enter company name"; //请输入公司名称
+"res_auth_business_license" = "Business license:"; //选择营业执照图片
+"res_auth_pay_account" = "Account to receive payments:"; //选择账号
+"res_auth_pay_account_title" = "Account to receive payments"; //选择账号title
+"res_auth_paypal_account" = "PayPal account"; //payPal账号
+"res_auth_enter_paypal_account" = "Enter PayPal account"; //输入PayPal账号
+"res_auth_bank_account" = "Bank account";//银行账号
+"res_auth_enter_bank_name" = "Please enter account holder name"; //输入银行名称
+"res_auth_enter_bank_cade_num" = "Please enter bank card number"; //输入银行卡号
+"res_auth_alert" = "The information is extremely important for your business and its income. Please confirm it is accurate. "; //以上信息对您的经营和收入至关重要,请确认准确无误.
+"res_auth_upload_success_alert" = "Congratulations, your data have been successfully submitted! We will review them as soon as possible. The audit results will be sent to your account, you can check the progress at any time."; //恭喜您, 您的资料已经成功提交,我们会尽快完成审核!审核结果会反馈到您的账号,也请随时关注审核进度.
+
+"res_auth_choose_img_sheet_title" = "You can use your camera or select one photo from gallery"; //
+"res_auth_phone_album" = "Phone album"; //选择图片
+"res_auth_license_upload_failure" = "Failed to upload business license, please try again!"; //执照上传失败,再次上传
+"res_auth_reason_for_rejection" = "Reason for rejection:"; //认证被驳回
+"res_auth_wait" = "Your data have been successfully submitted! We will review them as soon as possible. The audit results will be sent to your account, you can check the progress at any time."; //等待认证中.请等候
+
+

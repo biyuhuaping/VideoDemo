@@ -1,0 +1,484 @@
+/* 
+  Localizable.strings
+  VideoDemo
+
+  Created by biyuhuaping on 2017/5/3.
+  Copyright © 2017年 biyuhuaping. All rights reserved.
+*/
+
+// ******************************** 通用 ********************************
+"modify" = "修改";         //修改
+"next" = "下一步";  // 下一步
+"add" = "添加";            // 添加
+"save" = "保存";             // 保存
+"confirm" = "确定";        // 确定
+"cancel" = "取消";         // 取消
+"taste" = "口味最好";          // 口味最好
+"atmosphere" = "环境最好";// 环境最好
+"service" = "服务最好";      // 服务最好
+"rating" = "评分";       // 评分
+"changelanguage_relogin" = "系统语言改变了，请重新启动app";    // 系统语言改变了，请重新启动app
+"iphone_permissions_go_setting" = "去设置";     // 去设置
+"iphone_permissions_address_remind" = "请在手机系统设置中开启定位服务";    // 请在手机系统设置中开启定位服务
+"iphone_permissions_album_remind" = "请在手机系统设置中开启照片服务";    // 请在手机系统设置中开启照片服务
+"iphone_permissions_camera_remind" = "请在手机系统设置中开启相机服务";   // 请在手机系统设置中开启相机服务
+"iphone_permissions_notification_remind" = "请在手机系统设置中开启通知服务";  // 请在手机系统设置中开启通知服务
+"iphone_download_google_map" = "请下载Google Map APP.";       // 请下载Google Map APP.
+"video_play_failed" = "视频加载失败"; //视频加载失败
+"refresh_loading" = "加载中…";  // 加载中…
+
+"refresh_header_pull_down" = "下拉刷新";    // 下拉刷新
+"refresh_header_release_to_refresh" = "松开手指刷新内容"; // 松开手指刷新内容
+
+"refresh_footer_pull_up" = "点击或上拉加载更多";   // 点击或上拉加载更多
+"refresh_footer_no_data" = "抱歉，没有数据"; // 抱歉，没有数据
+"refresh_footer_no_more_data" = "没有更多的内容"; // 没有更多的内容
+
+"leading_button_start" = "引导页的Start按钮";               // 引导页的Start按钮
+
+"switch_on" = "已开启"; // 已开启
+"switch_off" = "未开启";   // 未开启
+
+// ******************************** 首页 ********************************
+"home_menu_new_promotion" = "عرض جديد";    // 发优惠
+"home_menu_customer_checkout" = "حساب العملاء";    // 结账
+"home_menu_manage_staff" = "ادرة الموظفين";      // 员工管理
+"home_menu_manage_coupons" = "ادارة الكوبون";          // 优惠管理
+"home_menu_manage_reviews" = "ادارة التقييمات";  // 评论管理
+"home_menu_manage_pictures" = "ادارة الصور";    // 照片管理
+"home_menu_manage_orders" = "ادارة الطلبات";    // 订单管理
+"home_menu_financial_records" = "سجل الحسابات";    // 财务结款
+"home_menu_my_account" = "حسابي";          // 个人中心
+"home_menu_message_center" = "مركز الرسائل";  // 消息中心
+
+// ******************************** 商户认证 ********************************
+
+// ******************************** 已认证首页 ********************************
+
+// ******************************** 已认证-发优惠 ********************************
+"video_details" = "视频详情";       //视频详情
+"edit_video" = "编辑视频";          //编辑视频
+"edit_done" = "编辑完成";           //编辑完成
+"select_video" = "选择视频";        //选择视频
+"trim_crop" = "整修和裁剪";          //整修和裁剪
+"all_video_delete" = "所有视频已删除";//所有视频已删除
+"create_promotion" = "设置优惠";    //设置优惠
+"copon" = "优惠券";                //优惠券
+"edit_promotion" = "编辑优惠";      //编辑优惠
+"edit_message" = "视频长度超过15秒，请裁剪后重试";//视频长度超过15秒，请裁剪后重试
+
+"please_enter_promotion_name" = "请设置优惠标题";      //请设置优惠标题
+"please_enter_ingredients_components" = "请填写食材/菜品名称，并用半角逗号（，）隔开多";//请填写食材/菜品名称，并用半角逗号（，）隔开多
+"please_enter_tags" = "请填写标签，并用半角逗号（，）隔开多个选项";   //请填写标签，并用半角逗号（，）隔开多个选项
+"please_enter_description" = "请填写优惠的简介内容";    //请填写优惠的简介内容
+"please_enter_coupon_name" = "请填写优惠券名称";        //请填写优惠券名称
+"please_enter_coupon_amount" = "请填写金额";    //请填写金额
+"please_enter_coupons_to_issue" = "请填写发放张数";    //请填写发放张数
+"coupon_valid_conditions" = "消费满xxBHD使用";//消费满xxBHD使用
+
+"group_order_title" = "طلب مجموعة";  //团购
+
+"from_time" = "من"; //选择开始时间
+"to_time" = "الي";//选择结束时间
+"start_date" = "تاريخ البدء";//选择开始日期
+"finish_date" = "تاريخ النهاية";//选择结束日期
+
+"please_enter_group_name" = "برجاء كتابة اسم المجموعة";    //请填写团购名称
+"please_enter_an_object" = "الاسم"; //请选择团购内容
+"please_enter_member_quantity" = "برجاء كتابة اسم المجموعة"; //请填写份数
+"please_enter_group_price" = "برجاء كتابة سعر المجموعة";//请填写团购金额
+"please_enter_group_number_people" = "برجاء كتابة العدد المطلوب لانشاء مجموعة واحدة"; //请填写成团需要的人数
+"select_group_deadline" = "برجاء ادخال اخر وقت لانشاء مجموعة جديدة";      //选择成团截止时间
+"select_expiration_date" = "برجاء اختيار وقت انتهاء العروض";    //选择活动过期日期
+
+"please_select_the_date" = "برجاء كتابة التاريخ الغير مسموح فيه استخدام الكوبون";   //请设置活动不涉及的日期
+"please_need_to_book" = "لا يحتاج للحجز المسبق في بعض حالات الزروة يحتاج الي حجز مسبق"; //无需预约，消费高峰时可能需要等位
+"please_other_conditions" = "غير قابل للتبديل بالمال ولا يوجد باقي";//不兑现，不找零
+
+"group_price_msg" = "مجموعة سعر أمر لا يجب أن يكون أعلى من السعر الأصلي.";//团购价大于原价，是否修改？
+
+"msg_enter_ingredients_components"="يرجى ملء المكونات الغذائية / اسم الاطباق";//请填写食材/菜品
+"msg_enter_tags"="يرجى ملء علامات";//请填写标签
+"msg_enter_description"="يرجى ملء الوصف";//请填写优惠的简介内容
+
+"msg_enter_coupon_name"="يرجى ملء كوبون الاسم.";//请填写优惠券的名称
+"msg_enter_coupon_amount"="يرجى ملء كوبون قيمة الكوبون.";//请填写优惠券的优惠金额
+"msg_enter_coupon_subsidy_provider"="يرجى اختيار وبون مقدم الكوبون.";//请选择优惠券的补贴来源
+"msg_enter_coupon_to_issue"="يرجى ملء كوبون عدد الكوبونات للطرح.";//请填写优惠券的发放张数
+"msg_enter_valid_from_to"="يرجى ملء كوبون صالح الي .";//请设置优惠券的有效期
+"msg_enter_couopon_everyday_valid"="يرجى ملء كوبون متاح يوميا من.";//请设置优惠券的每天时间
+
+"msg_enter_group_order_name"="يرجى ملء طلب مجموعة لاسم.";//请填写团购的名称
+"msg_enter_group_order_select"="يرجى ملء طلب مجموعة محتوي طلب المجموعة.";//请填写团购的团购内容
+"msg_enter_group_price"="يرجى ملء طلب مجموعة سعر المجموعة.";//请填写团购的团购价
+"msg_enter_group_subsidy_provider"="يرجى اختيار طلب مجموعة مقدم الكوبون.";//请选择团购的补贴来源
+"msg_enter_group_people_number"="يرجى ملء طلب مجموعة عدد الافراد المطلوب.";//请填写团购的人数要求
+"msg_enter_group_finish_date"="يرجى ملء طلب مجموعة لقد انتهي الوقت المحدد.";//请设置团购的结束时间
+"msg_enter_group_expiration_date"="يرجى ملء طلب مجموعة غير صالح للأستخدام انتهي الوقت المحدد.";//请设置团购的过期时间
+"msg_enter_group_everyday_valid"="يرجى ملء طلب مجموعة متاح يوميا من.";//请设置团购的每天时间
+
+"mag_coupon_start_date" = "تاريخ البدء يجب أن يكون في وقت لاحق من اليوم.";//优惠券有效期的开始日期如果早于今天的日期，弹出的提示
+"mag_coupon_finish_date" = "يجب أن يكون تاريخ الانتهاء في وقت لاحق من اليوم.";//优惠券有效期的结束日期如果早于今天的日期，弹出的提示
+"msg_coupon_finish_start_date" = "يجب أن يكون تاريخ الانتهاء في وقت لاحق من تاريخ البدء.";//优惠券有效期的结束日期如果早于开始日期，弹出的提示
+
+"mag_gorup_finish_date" = "يجب أن يكون تاريخ الانتهاء في وقت لاحق من تاريخ البدء.";//团购的结束时间如果早于今天，弹出的提示
+"mag_coupon_expiration_date" = "يجب أن يكون وقت انتهاء وقت لاحق من اليوم";//团购的过期如果早于今天，弹出的提示
+"msg_coupon_finish_expiration_date" = "يجب أن يكون تاريخ انتهاء الصلاحية في وقت لاحق من إنهاء الوقت";//优惠券有效期的结束日期如果早于开始日期，弹出的提示
+
+"msg_select_start_date" = "يرجى تحديد تاريخ البدء أولا.";//请先选择开始日期
+"msg_select_finish_date" = "يرجى تحديد تاريخ النهاية أولا.";//请先选择结束时间
+
+"mag_coupon_mamount" = "مبلغ الخصم  يجب أن يكون أكبر من  0 وأقل من  10";//优惠金额应大于0小于10
+"mag_coupon_issue" = "إصدار  عدد  أكبر من  0 وأقل من  100";//发放张数应大于0小于100
+"mag_group_price" = "سعر الشراء يجب أن يكون أكبر من 0 وأقل من 100";//团购价应大于0小于100
+"msg_people_num" = "يجب أن يكون الناس المطلوبة أكبر من 1 أقل من 51";//人数要求应大于0小于51
+"msg_original_price" = "يجب أن يكون السعر الأصلي أكبر من 0 أقل من 100";//原价应大于0小于100
+
+// ******************************** 结账 ********************************
+"checkout_scan_coupon" = "المسح"; // 扫描优惠
+"checkout_scan_qrcode_remind" = "برجاء مسح الباركود في المربع  الاعلي"; // 请将二维码放入取景框中即可自动扫描
+"checkout_scan_error_remind" = "غير صالح للأستخدام برجاء المحاولة مرة اخري";// 无法识别二维码
+"checkout_scan_again" = "مسح البركود مرة اخري";  // 重新扫描
+"checkout_cannot_use_promotion_remind" = "لا يمكنك استخدام الكوبون برجاء بمسح الباركود مرة اخري";   // 无法使用此优惠，请重新扫描
+"checkout_short_time_remind" = "فشلت المحاولة بسبب انه الوقت بين اخر مرة استخدمت بها الكوبون قصيرة للغاية";  // 生成订单失败，因为距离用户上次优惠买单时间太短
+"checkout_invalid_time_range" = "لا يمكن استخدام هذه القسيمة، لأنها ليست في نطاق وقت صالح الآن.";    // 商家优惠不在优惠时间内，不能使用
+"checkout_generate_order_failed_remind" = "فشلت العملية برجاء المحاولة مرة اخري";   //生成订单失败，请重新扫描二维码
+"time" = "وقت";   //财务列表 时间
+"serial_number" = "الرقم المسلسل"; //财务列表 流水号
+"amount" = "المبلغ";  //财务列表.金额
+
+// ******************************** 员工管理 ********************************
+"staff_account_have" = "هذا الاسم المستعار مستخدم بالفعل"; //用户名已经存在
+// ******************************** 优惠管理 ********************************
+"group_order_rules" = "تعليمات المجموعات";    // 拼团规则(参加团购的规则)
+"group_members_required" = "عدد الاشخاص :"; // 人数要求：xx人
+"group_deadline" = "وقت الانتهاء";          // 结束时间
+"group_terms_of_use" = "سياسة الاستخدام";  // 使用规则
+"group_valid_until"= "يمكن استخدامه حتي";     // 过期时间(团购优惠的结束时间)
+"group_meal_time" = "وقت الاستمتاع بالوجبة";        // 用餐时间
+"group_publisher" = "نشر";        // 发布商家
+"mine_coupons_finsh_time" = "صالح الي :";              // 结束时间(参加团购的结束时间)
+"mine_coupons_expiration_date" = "صالح الي تاريخ :";     // 过期时间(使用团购券的结束时间)
+"mine_coupons_validity_period" = "صالح الي :";     // 有效期
+"mine_coupons_valid_except" = "غير صالح للاستخدام في بعض المناسبات :";           // 例外日期
+"mine_coupons_everyday_valid" = "متوفر يوميا :";      // 每天时间(每天可以使用优惠券的时间)
+"group_order_rules" = "تعليمات المجموعات";    // 拼团规则(参加团购的规则)
+"not_submitted" = "لم يقدم بعد";   //未提交
+"waiting_for_publishing" = "في انتظار النشر"; //未发布
+"published" = "تم نشرها بالفعل";  //已经发布
+"finished" = "تم تحميلها"; //已经下架
+"remaining_time" = "الوقت المتبقي";  //剩余时间
+"saved" = "تم حفظها بالفعل"; //已经保存
+"rejected" = "تم رفضه";//已经驳回
+"waiting_for_approval" = "في انتظار الرد"; //等待发布
+"approved" = "تم الموافقة عليه"; //审核通过
+"delete" = "مسح";   //删除
+"edit" = "تعديل"; //编辑
+"edit_min" = "تعديل";
+"submit" = "تقديم"; //提交
+"publish" = "نشر"; //发布
+"finish" = "انتهي"; //下线
+"copy" = "نسخ";
+"waiting_for_approval_big" = "في انتظار الرد"; //等待发布大写
+"ingredients_components" = ":المكونات الغذائية / اسم الاطباق"; //食材.菜品
+"tags" = ":علامات"; //标签
+"description" = ":الوصف";//简介
+"name" = "الاسم:";  //团购 优惠券名字
+"coupon_amount_range" = "قيمة الكوبون:"; //优惠金额幅度
+"conditions" = "تعليمات الاستخدام:"; //使用条件
+"coupons_to_issue" = "عدد الكوبونات للطرح:"; //发放张数
+"valid_from_to" = "صالح الي:"; //有效期
+"coupon_not_valid_on" = "غير صالح للأستخدام في:"; //优惠券不适用于...
+"everyday_valid" = "متاح يوميا من:"; //每日使用时间
+"need_to_book_in_advance" = "يحتاج للحجز مسبقا:"; //预约提醒
+"other_conditions" = "حالات اخري:" ;//其他规则提醒
+"object_of_the_group_order" = "محتوي طلب المجموعة:"; //团购内容
+"original_price" = "السعر الاصلي:"; //原来的价格
+"group_order_price" = "سعر المجموعة:"; //团购价格
+"required_people" = "عدد الافراد المطلوب:"; //人数要求
+"finish_time" = "لقد انتهي الوقت المحدد:";//结束时间
+"expiration_date" = "غير صالح للأستخدام انتهي الوقت المحدد:"; //过期时间
+"coupon_not_valid_on" = "غير صالح للأستخدام في:"; //团购不适用于..
+"submit_min" = "تقديم"; //提交--小写
+"publish_min" = "تم نشرها بالفعل"; //发布--小写
+"finish_min" = "تم تحميلها"; //下线--小写
+"copy_min" = "نسخ";  //复制--小写
+"edit_min" = "تعديل"; //编辑 小写
+"alert_delete_coupon" = "هل انت متأكد من مسح جميع العروض؟"; //删除优惠
+"alert_submit_coupon" = "هل أنت متأكد أنك تريد أن تقدم جميع الترقيات مختارة؟"; //提交优惠
+"alert_finish_coupon" = "هل انت متأكد من استخدام جميع العروض؟"; //下线优惠
+"alert_publish_coupon" = "هل أنت متأكد أنك تريد أن تنشر جميع الترقيات مختارة؟"; //发布优惠
+"fund_provider" = "مقدم الكوبون:"; //补贴来源
+"group_order_details" = "تفاصيل كوبون المجموعات";//优惠列表 团购详情
+"coupon_details" = "تفاصيل الكوبون"; //优惠列表 优惠详情
+"quatity_of_groups_formed" = "الحصول على  كوبونات  عدد:";//剩余数量
+"time_remaining" = "الوقت المتبقي:"; //剩余时间
+"quatity_remaining" = "الكمية المتبقي:"; //剩余数量
+
+// ******************************** 评论管理 ********************************
+"review_rating_rules" = "قواعد التصنيف";             // 评分规则
+"review_videos" = "فيديو";                         // 视频
+"review_restaurant" = "مطاعم";                 // 餐厅
+"review_norating_now" = "لم يقييم بالدرجات";            // 暂无评分
+"review_total_points" = "مجموع النقاط:";            // 总分
+"review_all" = "الكل";               // 全部
+"review_good" = "حسن";             // 好评
+"review_bad" = "سئ";               // 差评
+"review_reply" = "الرد";           // 回复
+"review_delete" = "مسح";         // 删除
+
+// ******************************** 照片管理 ********************************
+"res_photo_title" = "ظبط الصور"; //照片管理
+"res_photo_dishes" = "الاطباق"; //菜
+"res_photo_atmosphere" = "البيئة المحيطة"; //环境
+"res_photo_menu" = "قائمة الطعام"; //菜单
+"error_over_max_count" = "عذرا، يمكنك فقط تحميل 30 صور كحد أقصى.";
+"error_over_max_count_5" = "عذرا، يمكنك فقط تحميل 5 صور كحد أقصى.";
+// ******************************** 订单管理 ********************************
+"coupon" = "كوبون:";     //优惠券名称
+"coupons" = "كوبون:";
+"group_order" = "طلب مجموعة:";  //团购数量
+"coupon_id" = "رقم الكوبون:";     //优惠券id
+"coupon_amount" = "قيمة الكوبون:";   //优惠券金额
+"customer" = "العميل:";    //消费者名称
+"time_of_use" = "وقت الاستخدام:";   //使用时间
+"funds_provided" = "تم الدفع ؟";  //是否结算
+"provision_time" = "وقت الدفع:";  //结算时间
+"yes" = "نعم";
+"not_yet" = "ليس بعد";
+// ******************************** 财务结款 ********************************
+"total_coupons_amount" = "مجموع الكوبونات";  //优惠总金额
+"provided_funds" = "تم تسويته بالفعل";    //结算
+"funds_yet_to_provide" = "لم يتم تسويتها بعد";  //未结算
+"provision_details" = "تفاصيل عملية الحساب";    //详情
+"account_period" = "مدة التحصيل :";      //账户
+"payment_serial_number" = "رقم عملية الحساب :";  //支付账户线下
+"sender's_online_account" = "على الانترنت حساب المرسل :"; //在线支付账户
+"provision_amount"  = "مبلغ التسويه :";  //金额
+"recipient's_bank" = "اسم بنك مستلم التحويل :";  //收款银行
+"recipient's_full_name" = "اسم المستلم بالكامل :";   //收款行全称
+"recipient's_bank_account" = "رقم الحساب :";  //收款账户 线下
+"recipient's_online_account" = "مستلم الحساب على الانترنت :"; //在线收款账户
+"provider's_bank" = "اسم بنك مودع التحويل :";   //付款银行
+"sender's_name" = "اسم مودع التحويل :";    //付款名称
+"sender's_bank_account" = "رقم حساب المودع :";  //付款账户
+"provision_time_space" = "وقت عملية الحساب :";    //付款时间
+"remarks" = "ملاحظات :";    //备注
+
+// ******************************** 个人中心 ********************************
+
+"change_photo_title" = "ظبط صورة لحسابك";   //您可以拍照或从相册中选择一张照片
+"change_takephoto" = "التقاط صورة";         //拍照
+"change_choosephoto" = "اختيار صورة";       //选择照片
+"change_cancel" = "الغاء";                  //取消
+"change_password" = "تغيير كلمة المرور";    //修改密码
+"change_moblie" = "تغيير رقم الهانف";       //修改手机
+"change_setting" = "الظبط";   //修改
+"complete" = "تم بنجاح";
+"personal_set" = "ظبط"; //设置
+
+"about_us" = "من نحن";                  //关于我们
+"setting" = "الظبط";                    //设置
+"share_app" = "مشاركة التطبيق";         //分享app
+"rate_app" = "تقييم التطبيق";           //评价app
+"contact_customer" = "خدمة العملاء";     //联系客服
+"personal_info" = "المعلومات الشخصية";  //个人信息
+
+"change_idcheck" = "تحقيق البطاقة الشخصية"; //身份验证
+"mobile_phone" = "رقم الهاتف";          //手机
+"change_verificode" = "رمز التحقق"; //验证码
+"change_link_newmobile" = "ربط مع الهاتف الجديد"; //绑定新手机
+"change_enter_current_mobile_number" = "برجاء اكتابة رقم الموبايل الحالي"; //请输入当前手机号
+"change_enter_verificode" = "برجاء ادخال رمز التحقق"; //请输入验证码
+"change_tip_message" = "تنويه : أذا لم تتمكن من الحصول علي رمز التحقق برجاء التواصل معنا عبر رقم خدمة العملاء التالي :+00468-800-1965";//温馨提示：如果因手机遗失或其它原因，无法使用已绑定的手机收取验证码，请联系客服人员变更！客服联系方式：
+"password" = "كلمة المرور";             //密码
+"set_password" = "ظبط كلمة المرور";     //设置密码
+"enter_password" = "برجاء كتابة كلمة المرور"; //请输入密码
+"enter_password_6_chart" = "برجاء كتابة كلمة المرور علي علي الاقل 6 احرف"; // 请输入不少于6位字符的密码
+"old_password" = "كلمة المرور القديمة";    //  原密码
+"new_password" = "كلمة المرور الجديدة";    //  新密码
+"enter_old_password" = "برجاء كتابة كلمة المرور القديمة";   // 请输入原有密码
+"enter_new_password" = "كلمة المرور الجديدة";               // 请输入新密码
+"nextstep" = "الخطوة التالية";             //下一步
+"quit" = "خروج";                           // 退出
+
+"restaurant_info" = "ملعومات المطعم";   //餐厅信息
+"restaurant_name" = "اسم المطعم";       //餐厅名称
+"cuisine" = "انواع الاطباق";             //菜系
+"restaurant_address" = "موقع المطعم";   //餐厅地址
+"map_location" = "خريطة الموقع";        //地图位置
+"phone" = "رقم الهاتف";                 //联系电话
+"open_time" = "ساعات العمل";            //营业时间
+"cost_person" = ":معدل استهلاك الفرد";    //人均消费
+"object_of_the_group_order_title" = "محتوي طلب المجموعة";//团购内容
+"add_object_of_the_group" = "اضافة محتوي للمجموعة";//添加团购内容
+"edit_object_of_the_group" = "تعديل محتوي المجموعة";//编辑团购内容
+"enter_name" = "يرجى ادخال اسم";                    //请输入名字
+"original_price" = "السعر الاصلي";                  //价格
+"enter_original_price" = "برجاء كتابة السعر الاصلي";//请输入团购菜/套餐的名称
+"company_info" = "بينات الشركة";        //企业信息
+"company_name" = "اسم الشركة";          //公司名称
+"business_lic" = "الرخصة التجارية";     //营业执照
+"payment_account" = ":حساب التحصيل";    //收款账号
+"tip_message" = "\r اذا اردت تغيير المعلومات السابقة برجاء التواصل مع خدمة العملاء عن\r service@xbniao.com : البريد الالكتروني\r رقم الهاتف :+00468-800-1965"; //如需修改上述信息，请联系XBN客服。电话/邮箱
+"setting_about_us" = "من نحن";    // 关于我们
+"person_setting_not_setting" = "ظبط الاشعارات"; //通知
+"person_set_email" = "ظبط البريد الالكتروني "; //绑定邮箱
+"person_change_email" = "تغيير البريد الالكتروني"; //修改邮箱
+"person_old_email" = "البريد الالكتروني القديم"; //老的邮箱
+"person_new_email" = "البريد الالكتروني الجديد"; //新邮箱
+"person_enter_old_email" = "برجاء كتابة البريد الالكتروني القديم"; //请输入老邮箱
+"person_enter_new_email" = "برجاء كتابة البريد الالكتروني الجديد"; //请输入新邮箱
+"person_enter_email_alert_text" = "برجاء كتابة كلمة المرور علي الاقل 6 احرف"; // 请至少输入6个字符
+"person_choose_restaurant_photo" = "البوم صور المطعم"; //餐厅相册选择
+"person_bind_email_is_have" = "هذا البريد الالكتروني  مرتبط بالفعل برجاء اختيار رقم اخر"; //邮箱已经被绑定过.请更改
+
+// ******************************** 设置、分享 ********************************
+
+"share_to_friend" = "مشاركة مع الاصدقاء";    //推荐给朋友
+"share_message" = "الرسائل";                //短信
+"share_email" = "البريد الالكتروني";         //邮件
+"share_twitter" = "تويتر";                  //twitter
+"share_facebook" = "فيسبوك";                //facebook
+
+"share_success" = "تم نشره بنجاح";          //分享成功！
+"share_fail" = "فشلت عملية النشر";          //分享失败！
+
+"share_app_title" = "يمكنك تجربة تطبيق Laziz!-M فهو اكثر من رائع"; // 推荐一个优惠用餐神器
+"share_content" = "استخدم تطبيق Laziz!-M لنشر فيديوهات الطعام , يمكنك ايضا تقديم فيديوهات مطعمك لكي تجذب عدد    اكثر من العملاء الجدد , يمكنك تجربته الان";//我正在使用Laziz!-M APP，发布美食优惠视频，宣传我店信息，招揽更多客户，你也可以试试：
+
+"setting_clear_cache" = "مسح الذاكرة الداخلية";  // 清除缓存
+"setting_clearing" = "يتم المسح الان";        // 正在清除
+"setting_clear_success" = "تم المسح بنجاح"; // 清除成功
+"setting_clear_remind" = "هل انت متأكد من حذ  الذاكرة الداخلية ؟";  // 您确定要清除所有缓存数据吗
+"setting_button_clear" = "حذف";       // 清除
+"setting_report_problem" = "ابلغنا بمشكلتك"; // 意见反馈
+"setting_report_characters_remind" = "برجاء كتابة مشكلتك حد اقصي 1000 حرف "; // 请输入您的反馈意见（字数1000字以内）
+"setting_about_us" = "من نحن";    // 关于我们
+"setting_report_quit_remind" = "لم الانتهاء من المحتوى، هل أنت متأكد أنك تريد الخروج؟"; // 您的评价还未完成，您确定要离开吗？
+"setting_report_submit_success_remind" = "تم تقديمها بنجاح"; // 提交成功！
+"setting_notification_remind" = "اذا كنت ترغب في استقبال او عدم اسقبال الاشعارات الخاصة بتطبيق Laziz! برجاء الذهاب الي ظبط الهاتف و اختيار Laziz! و قم بتغير الاشعارات ";  // 如果您要关闭或开启Laziz!的新消息通知，请在手机设置中，找到应用程序Laziz!，更改“通知”状态。
+"setting_new_message_notifications" = "اعلامي بالاشعارات الجديدة";  // 接收新消息通知
+
+// ******************************** 登录、注册 ********************************
+"terms_of_service" = "شروط الخدمة"; //服务协议
+"login_login" = "تسجيل الان";   //登陆
+"login_register" = "اشتراك"; //登陆
+"login_change_login_mode" = "المزيد تسجيل الدخول وضع"; //更多登录方式
+"login_loginnow" = "تسجيل الان";                         //立即登录
+"login_register" = "اشتراك";                            //注册
+"login_enter_mobile" = "برجاء ادخال رقم الهاتف";        //请输入手机号码
+"login_enter_email" = "برجاء كتابة البريد الالكتروني";   //请输入邮箱地址
+"login_get_verifi_code" = "رمز التحقق";                 //获取验证码
+"login_verifi_code" = "رمز التحقق";                     //验证码
+"login_password" = "كلمة المرور";                       //密码
+"login_enter_verifi_code" = "برجاء كتابة رمز التحقق";   //请输入验证码
+"login_quick_login" = "التسجيل السريع";                 //快捷登录
+"login_account_login" = "تسجيل الدخول بواسطة اسم المستخدم وكلمة المرور";//账号和密码登录
+"login_mobile" = "رقم الهاتف";   //手机号
+"login_mobile_email" = "رقم الهاتف/البريد الالكتروني";     //手机或email
+"register_termsofservice" = "قرأت و موافق "; //我已阅读并同意《用户使用协议》
+"forgot_password_msg" = "اذا لم يكن الهاتف متصل برجاء اختيار البريد الاكتروني للمساعدة";//若果您未绑定手机号，请选择邮箱找回
+"password_text" = "كتابة كلمة المرور علي علي الاقل 6 احرف ";//请输入不少于6位字符的密码
+"mag_account_stopstate" = "عذرا، لقد تم تعطيل حسابك، يرجى الاتصال بخدمة العملاء \r service@xbniao.com : البريد الاكتروني \r رقم الهاتف :+00468-800-1965";
+
+"enter_invalid_mobile" = "رقم الهاتف غير صحيح"; //请输入正确的手机号
+"enter_invalid_verifi" = "رمز التحقق غير صحيح"; //验证码错误
+"enter_invalid_password" = "كلمة المرور او رقم الهاتف غير صحيح"; //密码错误
+"change_success" = "تم التغيير بنجاح";//修改成功
+"change_failed" = "فشلت عملية التغيير برجاء المحاولة مرة اخري";//修改失败
+"save_success" = "تم الحفظ بنجاح";//保存成功
+"save_failed" = "فشلت عملية الحفظ برجاء المحاولة مرة اخري";//保存失败
+"auth_message" = "Laziz! سوف تقوم خدمة العملاء بالتواصل مع في اقر وقت للتحقق من المستندات"; //Laziz!客服会尽快联系您完成认证！
+"auth_title_str" = "زيادةالارباح سهلالادارة";
+"auth_button_str" = "ابدأ اعمالك من هنا"; //马上认证
+
+"register_failed" = "فشل في تسجيل";//注册失败提示语
+"login_failed" = "فشل في تسجيل الدخول"; //登录失败提示语
+"account_failed" = "كلمة المرور او رقم الهاتف غير صحيح"; //帐号或密码错误
+"failed_to_login" = "فشل في تسجيل الدخول"; // 邮箱或账号登陆失败
+"vificode_failed" = "فشل في الحصول على رمز التحقق، يرجى المحاولة مرة أخرى!";
+"msg_change_mobile" = "تهانينا لك لقد ربط هاتفك بنجاح";//恭喜您，绑定手机修改成功！
+"phone_is_register" = "آسف، وقد تم تسجيل رقم الهاتف هذا، الرجاء محاولة واحدة أخرى!"; //注册时用的手机号已被注册的提示
+"reset_password_fail" = "فشل في إعادة تعيين كلمة السر، يرجى المحاولة مرة أخرى!"; //重置密码失败
+"please_reset_password_title" = "يرجى إعادة ضبط كلمة المرور الخاصة بك";
+"save_fail" = "فشلت عملية الحفظ برجاء المحاولة مرة اخري";//保存失败	弹出框提示语
+"submit_fail" = "فشلت عملية التقديم برجاء المحاولة مرة اخري";//提交失败
+"try_again" = "حاول ثانية";//重试
+"password_recovery" = "استعادة كلمة المرور"; //找回密码
+"read_and_agree_service" = "يرجى قراءة و تتفق مع شروط الخدمة";  //请先阅读服务协议并同意
+"login_email" = "البريد الالكتروني"; //邮箱登陆
+"login_mobile_phone_and_password" = "رقم الجوال  و كلمة السر"; //手机和密码登陆
+"login_email_and_password" = "البريد الإلكتروني  /  رقم الحساب  وكلمة السر"; //邮箱和密码登陆
+"login_alert_enter_eMail_address" = "برجاء كتابة البريد الالكتروني"; //请输入邮箱地址
+"login_select_area_code" = "اختر البلد أو المنطقة"; //城市编号选择
+"register_by_email" = "استخدام البريد الإلكتروني  للتسجيل"; //使用邮箱注册
+"register_by_phone" = "اشتراك عن طريق الهاتف"; //使用手机注册
+"recovery_password_phone" = "الرجاء إدخال  رقم الهاتف الخاص بك  تلقي  رمز التحقق،  ووضع  كلمة السر الجديدة"; //请输入手机号找回密码
+"recovery_password_email" = "برجاء كتابة بريدك الالكتروني لاستقبال رمز التحقق وظبط كلمة مرور جديدة"; //请输入邮箱找回密码
+"recovery_reset_password" = "برجاء كتابة كلمة المرور الجديدة علي الاقل 6 احرف"; //请重新设置您的密码
+"login_email_or_account" = " البريد الإلكتروني  /  رقم  الحساب"; //邮箱或用户站好登陆
+"login_please_enter_email_or_account" = "برجاء كتابة البريد الالكتروني /  رقم  الحساب"; //请输入邮箱地址或者用户名
+"login_email" = "البريد الالكتروني";
+"email_is_register" = "آسف، وقد تم تسجيل البريد الإلكتروني هذا، الرجاء محاولة واحدة أخرى!"; //注册时用的邮箱已被注册的提示
+"invalid_email_remind" = "بريد اليكتروني غير صحيح";                 // 请输入正确的邮箱
+"send_code_maxnum_remind" = "عذرا، قانون رقم التحقق وصلت الحد اليومي الخاص بك، يرجى المحاولة مرة أخرى غدا."; // 抱歉，短信验证码发送次数已达每日上限，请明天再来
+
+// ******************************** 首页-员工管理 ********************************
+"manage_staff" = "أدراة الموظفين";  //员工管理列表
+"create_staff_member" = "انشاء حساب الموظفين"; //创建新员工
+"staff_account" = "حساب الموظفين:";
+"enter_staff_member_account" = "برجاء كتابة رقم الحساب"; //输入员工账号
+"staff_password" = "كلمة المرور:";
+"enter_staff_member_password" = "برجاء كتابة كلمة المرور"; //输入员工密码
+"staff_name" = "اسم الموظف:";
+"enter_staff_member_name" = "برجاء كتابة اسم الحساب"; //输入员工姓名
+"staff_permission" = "اختصاص الموظفين:";
+"staff_new_promotion" = "عرض جديد"; //员工管理开优惠的权限
+"staff_customer_checkout" = "حساب"; //员工结账权限
+"staff_edit_staff_member" = "تحرير موظف"; //修改员工信息标题
+"staff_delete_staff" = "هل أنت متأكد أنك تريد حذف هذا الموظف؟"; //是否删除员工
+
+// **************************************消息中心********************************
+"message_message_center" = "مركز الرسائل"; //消息中心
+"message_system" = "معلومات النظام"; //系统通知
+"message_restaurant_auth_regected" = "تم حذف بعض الصور مطعم الخاص بك. انقر لرؤية.";//商户认证被驳回,请点击查看
+"message_restaurant_auth_success" = "المطعم الخاص وقد تم التوثيق من خلال المراجعة. انقر لرؤية.";//商户认证通过
+"message_photos_delete" = "تم حذف بعض الصور مطعم الخاص بك. انقر لرؤية."; //照片删除
+"message_new_review" = "كتب نصيحة جديدة. انقر لرؤية."; //有新评论.点击查看
+"message_review_details" = "تفاصيل تعليق"; //评论详情
+"message_new_finical" = "هناك سجل المالي الجديد. انقر لرؤية.";// 有新的到账,请查看
+"message_res_auth_success_exit" = "يرجى ريلوجين Laziz!-M لتطبيق الإعدادات الجديدة."; //商家认证成功后. 退出app
+"message_eason_for_deletion" = "سبب الحذف:"; //照片删除原因
+
+//*****************************商户认证*************************************
+"res_auth_restaurant_authentication" = "تعاقد الشركات"; //title
+"res_auth_restaurant_name" = "اسم المطعم:";  //餐厅名称
+"res_auth_enter_your_restaurant_name" = "برجاء ادخال اسم الشركة"; //请输入餐厅名称
+"res_auth_restaurant_info" = "ملعومات المطعم"; //餐厅简介
+"res_auth_cuisine" = "انواع الاطباق:"; //菜系
+"res_auth_restaurant_address" = "موقع المطعم:"; //餐厅地址
+"res_auth_enter_restaurant_addredd" = "برجاء كتابة عنوان المطعم "; //请输入餐厅地址
+"res_auth_map_location" = "خريطة الموقع:"; //地图定位
+"res_auth_area" = "المنطقة:"; //热门商区
+"res_auth_phone" = "رقم الهاتف:"; //电话
+"res_auth_enter_phone" = "برجاء كتابة رقم المطعم"; //请输入餐厅电话
+"res_auth_open_time" = "ساعات العمل:"; //营业时间
+"res_auth_company_info" = "معلومات عن الشركة"; //公司简介
+"res_auth_company_name" = "اسم الشركة:"; //公司名称
+"res_auth_enter_company_name" = "برجاء كتابة اسم الشركة"; //请输入公司名称
+"res_auth_business_license" = "الرخصة التجارية:"; //选择营业执照图片
+"res_auth_pay_account" = "رقم الحساب:"; //选择账号
+"res_auth_pay_account_title" = "رقم الحساب"; //选择账号title
+"res_auth_paypal_account" = "حساب باي بال"; //payPal账号
+"res_auth_enter_paypal_account" = "برجاء ادخال رقم حساب باي بال"; //输入PayPal账号
+"res_auth_bank_account" = "حساب بنكي";//银行账号
+"res_auth_enter_bank_name" = "برجاء كتابة اسم المشترك حامل الكارت"; //输入银行名称
+"res_auth_enter_bank_cade_num" = "برجاء كتابة رقم الكارت البنكي "; //输入银行卡号
+"res_auth_alert" = "الالمعلومات عالية غاية في الاهمية لاعمالك برجاء مراجتها مرة اخري"; //以上信息对您的经营和收入至关重要,请确认准确无误.
+"res_auth_upload_success_alert" = "تهانينا لك لقد تم تقديم بيناتك بنجاح سوف يتم مراجعتها وابلاغكم عن طريق حسابك في اسرع وقت ممكن برجاء متابعة حسابك من وقت لاخر"; //恭喜您, 您的资料已经成功提交,我们会尽快完成审核!审核结果会反馈到您的账号,也请随时关注审核进度.
+"res_auth_choose_img_sheet_title" = "يمكنك التقاط صورة او اختيار من البوم الصور"; //
+"res_auth_phone_album" = "البوم الصور"; //选择图片
+"res_auth_license_upload_failure" = "فشل في تحميل الرخصة التجارية، يرجى المحاولة مرة أخرى!"; //执照上传失败,再次上传
+"res_auth_reason_for_rejection" = "سبب الرفض:"; //认证被驳回
+"res_auth_wait" = "تهانينا لك لقد تم تقديم بيناتك بنجاح سوف يتم مراجعتها وابلاغكم عن طريق حسابك في اسرع وقت ممكن برجاء متابعة حسابك من وقت لاخر "; //等待认证中.请等候

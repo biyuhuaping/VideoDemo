@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LZNewPromotionVC">
+            <connections>
+                <outlet property="cancelButton" destination="JGT-Zp-7Nw" id="eHG-tz-suh"/>
+                <outlet property="confirmButton" destination="72Y-ht-z9P" id="RER-dT-qVj"/>
+                <outlet property="ghostImageView" destination="JMy-kw-3j3" id="a5v-Pf-I6e"/>
+                <outlet property="girdView" destination="s4r-Er-HdQ" id="pGv-KZ-Ero"/>
+                <outlet property="gridOrlineButton" destination="oYL-lC-4WG" id="0Ch-mC-foc"/>
+                <outlet property="levelView" destination="YGh-h4-lhj" id="Em3-UF-p71"/>
+                <outlet property="previewView" destination="Nbh-Xr-mn6" id="GUB-Xl-VGh"/>
+                <outlet property="progressBar" destination="59Q-cY-Xac" id="nUj-FX-yzI"/>
+                <outlet property="snapshotButton" destination="cZo-bM-lGj" id="12B-bS-tZ3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbh-Xr-mn6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Nbh-Xr-mn6" secondAttribute="height" multiplier="1:1" id="Yqz-zF-ThY"/>
+                    </constraints>
+                </view>
+                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JMy-kw-3j3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4r-Er-HdQ" customClass="LZGridView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGh-h4-lhj" customClass="LZLevelView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMw-fI-DcK">
+                    <rect key="frame" x="0.0" y="375" width="375" height="292"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59Q-cY-Xac" customClass="ProgressBar">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="7.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="59Q-cY-Xac" secondAttribute="height" multiplier="375:7.5" id="VFd-Dr-n9h"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGT-Zp-7Nw">
+                            <rect key="frame" x="44" y="104" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="JGT-Zp-7Nw" secondAttribute="height" multiplier="1:1" id="mVR-2G-qz2"/>
+                            </constraints>
+                            <state key="normal" image="lz_recorder_delete"/>
+                            <state key="selected" image="lz_recorder_delete_hd"/>
+                            <connections>
+                                <action selector="cancelButton:" destination="-1" eventType="touchUpInside" id="dTy-nb-oGd"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TuX-7V-eYx" customClass="UIControl">
+                            <rect key="frame" x="131" y="77.5" width="113" height="113"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lz_recorder_recorder" translatesAutoresizingMaskIntoConstraints="NO" id="9Jc-CL-bqu">
+                                    <rect key="frame" x="0.0" y="0.0" width="113" height="113"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="9Jc-CL-bqu" secondAttribute="trailing" id="496-Ik-lx5"/>
+                                <constraint firstAttribute="width" secondItem="TuX-7V-eYx" secondAttribute="height" multiplier="1:1" id="QyI-MW-BF7"/>
+                                <constraint firstItem="9Jc-CL-bqu" firstAttribute="top" secondItem="TuX-7V-eYx" secondAttribute="top" id="WoF-9g-uCw"/>
+                                <constraint firstAttribute="bottom" secondItem="9Jc-CL-bqu" secondAttribute="bottom" id="djb-4O-xWt"/>
+                                <constraint firstItem="9Jc-CL-bqu" firstAttribute="leading" secondItem="TuX-7V-eYx" secondAttribute="leading" id="ftQ-HQ-5G1"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="56.5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="recordButton:" destination="-1" eventType="touchDown" id="Mow-Ol-If1"/>
+                                <action selector="recordPauseButton:" destination="-1" eventType="touchUpInside" id="gvM-Rk-aV5"/>
+                            </connections>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72Y-ht-z9P">
+                            <rect key="frame" x="272" y="104" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="72Y-ht-z9P" secondAttribute="height" multiplier="1:1" id="kl1-G8-cCG"/>
+                            </constraints>
+                            <state key="normal" image="lz_recorder_confirm"/>
+                            <state key="selected" image="lz_recorder_confirm_hd"/>
+                            <connections>
+                                <action selector="confirmButton:" destination="-1" eventType="touchUpInside" id="EqZ-HH-jJJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f19-VY-RBU">
+                            <rect key="frame" x="0.0" y="247" width="94.5" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="2Vg-RV-s8P"/>
+                            </constraints>
+                            <state key="normal" image="lz_recorder_change"/>
+                            <state key="selected" image="lz_recorder_change_hd"/>
+                            <state key="highlighted" image="lz_recorder_change_hd"/>
+                            <connections>
+                                <action selector="changeButton:" destination="-1" eventType="touchUpInside" id="ERh-Ib-9aA"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYL-lC-4WG" customClass="LZButton">
+                            <rect key="frame" x="94.5" y="247" width="94" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="YbU-Wk-bjU"/>
+                            </constraints>
+                            <state key="normal" image="lz_recorder_grid"/>
+                            <connections>
+                                <action selector="gridOrlineButton:" destination="-1" eventType="valueChanged" id="Tek-VX-Cfn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZo-bM-lGj">
+                            <rect key="frame" x="188.5" y="247" width="94.5" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="zEG-oV-imX"/>
+                            </constraints>
+                            <state key="normal" image="lz_recorder_snapshot"/>
+                            <state key="selected" image="lz_recorder_snapshot_hd"/>
+                            <connections>
+                                <action selector="snapshotButton:" destination="-1" eventType="touchUpInside" id="a7N-iI-lho"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qBO-Wg-J4v">
+                            <rect key="frame" x="283" y="247" width="94" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="3vD-1b-SME"/>
+                            </constraints>
+                            <state key="normal" image="lz_recorder_flash"/>
+                            <state key="selected" image="lz_recorder_flash_hd"/>
+                            <connections>
+                                <action selector="flashButton:" destination="-1" eventType="touchUpInside" id="v84-0B-34W"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="cZo-bM-lGj" firstAttribute="width" secondItem="oYL-lC-4WG" secondAttribute="width" id="4PU-6N-djy"/>
+                        <constraint firstAttribute="trailing" secondItem="59Q-cY-Xac" secondAttribute="trailing" id="8Rr-cj-ng2"/>
+                        <constraint firstAttribute="bottom" secondItem="oYL-lC-4WG" secondAttribute="bottom" constant="15" id="B7N-KU-aeb"/>
+                        <constraint firstItem="oYL-lC-4WG" firstAttribute="leading" secondItem="f19-VY-RBU" secondAttribute="trailing" id="G7O-xe-RZz"/>
+                        <constraint firstItem="TuX-7V-eYx" firstAttribute="centerX" secondItem="AMw-fI-DcK" secondAttribute="centerX" id="IEy-ZB-FHP"/>
+                        <constraint firstItem="f19-VY-RBU" firstAttribute="width" secondItem="AMw-fI-DcK" secondAttribute="width" multiplier="1:4" id="QyQ-ao-bxC"/>
+                        <constraint firstItem="JGT-Zp-7Nw" firstAttribute="leading" secondItem="AMw-fI-DcK" secondAttribute="leading" constant="43.5" id="Sqv-0x-d5C"/>
+                        <constraint firstItem="TuX-7V-eYx" firstAttribute="centerY" secondItem="AMw-fI-DcK" secondAttribute="centerY" constant="-12" id="TZF-yZ-AsL"/>
+                        <constraint firstAttribute="bottom" secondItem="f19-VY-RBU" secondAttribute="bottom" constant="15" id="Tzs-eO-2V7"/>
+                        <constraint firstAttribute="trailing" secondItem="72Y-ht-z9P" secondAttribute="trailing" constant="43.5" id="UsC-40-Ljf"/>
+                        <constraint firstItem="59Q-cY-Xac" firstAttribute="top" secondItem="AMw-fI-DcK" secondAttribute="top" id="VpR-za-qaQ"/>
+                        <constraint firstAttribute="bottom" secondItem="cZo-bM-lGj" secondAttribute="bottom" constant="15" id="W2t-bB-7C5"/>
+                        <constraint firstItem="JGT-Zp-7Nw" firstAttribute="width" secondItem="AMw-fI-DcK" secondAttribute="width" multiplier="60:375" id="atG-78-GMn"/>
+                        <constraint firstItem="cZo-bM-lGj" firstAttribute="leading" secondItem="oYL-lC-4WG" secondAttribute="trailing" id="c0p-2y-aoa"/>
+                        <constraint firstItem="59Q-cY-Xac" firstAttribute="leading" secondItem="AMw-fI-DcK" secondAttribute="leading" id="cIl-q5-Zcu"/>
+                        <constraint firstItem="72Y-ht-z9P" firstAttribute="centerY" secondItem="TuX-7V-eYx" secondAttribute="centerY" id="esU-L5-2Ca"/>
+                        <constraint firstItem="TuX-7V-eYx" firstAttribute="width" secondItem="AMw-fI-DcK" secondAttribute="width" multiplier="113:375" id="gt9-wc-eMW"/>
+                        <constraint firstItem="JGT-Zp-7Nw" firstAttribute="centerY" secondItem="TuX-7V-eYx" secondAttribute="centerY" id="kEi-Dw-9W5"/>
+                        <constraint firstItem="qBO-Wg-J4v" firstAttribute="width" secondItem="cZo-bM-lGj" secondAttribute="width" id="o19-pU-V6W"/>
+                        <constraint firstItem="oYL-lC-4WG" firstAttribute="width" secondItem="f19-VY-RBU" secondAttribute="width" id="oZR-v1-Y3T"/>
+                        <constraint firstItem="f19-VY-RBU" firstAttribute="leading" secondItem="AMw-fI-DcK" secondAttribute="leading" id="opA-D3-Bkq"/>
+                        <constraint firstItem="qBO-Wg-J4v" firstAttribute="leading" secondItem="cZo-bM-lGj" secondAttribute="trailing" id="rUE-Iv-yoh"/>
+                        <constraint firstItem="72Y-ht-z9P" firstAttribute="width" secondItem="AMw-fI-DcK" secondAttribute="width" multiplier="60:375" id="ymV-LN-ivc"/>
+                        <constraint firstAttribute="bottom" secondItem="qBO-Wg-J4v" secondAttribute="bottom" constant="15" id="zMS-Kb-Z8P"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AMw-fI-DcK" firstAttribute="top" secondItem="s4r-Er-HdQ" secondAttribute="bottom" id="116-fN-h3g"/>
+                <constraint firstItem="AMw-fI-DcK" firstAttribute="top" secondItem="YGh-h4-lhj" secondAttribute="bottom" id="6ar-Or-BO5"/>
+                <constraint firstItem="Nbh-Xr-mn6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9Ku-pa-WV2"/>
+                <constraint firstItem="s4r-Er-HdQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BlF-g0-IGc"/>
+                <constraint firstAttribute="trailing" secondItem="JMy-kw-3j3" secondAttribute="trailing" id="FZ8-5z-PZY"/>
+                <constraint firstItem="YGh-h4-lhj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HuG-ld-6Qd"/>
+                <constraint firstItem="JMy-kw-3j3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KPU-M5-mlo"/>
+                <constraint firstItem="JMy-kw-3j3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Lcx-cA-I8c"/>
+                <constraint firstItem="s4r-Er-HdQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MXc-O1-fuF"/>
+                <constraint firstItem="AMw-fI-DcK" firstAttribute="top" secondItem="JMy-kw-3j3" secondAttribute="bottom" id="NAX-hu-o9u"/>
+                <constraint firstItem="YGh-h4-lhj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ULT-jA-7Wm"/>
+                <constraint firstAttribute="bottom" secondItem="AMw-fI-DcK" secondAttribute="bottom" id="ZtH-gE-IeS"/>
+                <constraint firstAttribute="trailing" secondItem="AMw-fI-DcK" secondAttribute="trailing" id="a2I-Ab-fFo"/>
+                <constraint firstAttribute="trailing" secondItem="s4r-Er-HdQ" secondAttribute="trailing" id="bsk-Bg-6IB"/>
+                <constraint firstAttribute="trailing" secondItem="Nbh-Xr-mn6" secondAttribute="trailing" id="cjv-7P-jfo"/>
+                <constraint firstItem="AMw-fI-DcK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dxF-SK-jat"/>
+                <constraint firstItem="Nbh-Xr-mn6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jc8-1c-Y2I"/>
+                <constraint firstAttribute="trailing" secondItem="YGh-h4-lhj" secondAttribute="trailing" id="kCn-Lx-FVb"/>
+                <constraint firstItem="AMw-fI-DcK" firstAttribute="top" secondItem="Nbh-Xr-mn6" secondAttribute="bottom" id="yXw-F0-khi"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="lz_recorder_change" width="22" height="19"/>
+        <image name="lz_recorder_change_hd" width="22" height="19"/>
+        <image name="lz_recorder_confirm" width="59" height="59"/>
+        <image name="lz_recorder_confirm_hd" width="59" height="59"/>
+        <image name="lz_recorder_delete" width="59" height="59"/>
+        <image name="lz_recorder_delete_hd" width="59" height="59"/>
+        <image name="lz_recorder_flash" width="14" height="20"/>
+        <image name="lz_recorder_flash_hd" width="14" height="20"/>
+        <image name="lz_recorder_grid" width="20" height="20"/>
+        <image name="lz_recorder_recorder" width="113" height="113"/>
+        <image name="lz_recorder_snapshot" width="16" height="20"/>
+        <image name="lz_recorder_snapshot_hd" width="16" height="20"/>
+    </resources>
+</document>
