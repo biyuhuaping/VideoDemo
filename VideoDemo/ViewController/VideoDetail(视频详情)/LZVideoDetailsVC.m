@@ -58,23 +58,11 @@
 
 #pragma mark - Event
 - (void)navbarRightButtonClickAction:(UIButton*)sender {
-    NSString * temppath = NSTemporaryDirectory();
-    temppath = [temppath stringByAppendingPathComponent:@"ExportVideo"];
-    BOOL exists = [[NSFileManager defaultManager] fileExistsAtPath:temppath isDirectory:NULL];
-    if (!exists) {
-        [[NSFileManager defaultManager] createDirectoryAtPath:temppath withIntermediateDirectories:YES attributes:nil error:NULL];
-    }
-    
-    temppath = [temppath stringByAppendingPathComponent:@"ConponVideo.mp4"];
-    if ([[NSFileManager defaultManager] fileExistsAtPath:temppath isDirectory:NULL]) {
-        [[NSFileManager defaultManager] removeItemAtPath:temppath error:NULL];
-    }
-    
-    DLog(@"%@", temppath);
-    
+    NSURL *tempPath = [LZVideoTools filePathWithFileName:@"ConponVideo.mp4"];
+
+//    4.导出
     WS(weakSelf);
-    //    4.导出
-    [LZVideoTools compressVideo:self.recordSession.assetRepresentingSegments videoComposition:nil outputFilePath:temppath timeRange:kCMTimeRangeZero completion:^(NSURL *savedPath) {
+    [LZVideoTools exportVideo:self.recordSession.assetRepresentingSegments videoComposition:nil filePath:tempPath timeRange:kCMTimeRangeZero completion:^(NSURL *savedPath) {
         if(savedPath) {
             DLog(@"导出视频路径：%@", savedPath);
             //保存到本地

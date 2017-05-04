@@ -186,28 +186,18 @@
         SCRecordSessionSegment * segment = weakSelf.recordSegments[i];
         NSArray *compatiblePresets = [AVAssetExportSession exportPresetsCompatibleWithAsset:segment.asset];
         if ([compatiblePresets containsObject:AVAssetExportPresetHighestQuality]) {
-            
-            __block NSString * temppath = NSTemporaryDirectory();
-            temppath = [temppath stringByAppendingPathComponent:@"SCVideo"];
-            BOOL exists =[[NSFileManager defaultManager] fileExistsAtPath:temppath isDirectory:NULL];
-            if (!exists) {
-                [[NSFileManager defaultManager] createDirectoryAtPath:temppath withIntermediateDirectories:YES attributes:nil error:NULL];
-            }
-            
-            NSString *filename = [NSString stringWithFormat:@"SCVideoEditCut.%ld.mp4", (long)i];
-            temppath = [temppath stringByAppendingPathComponent:filename];
-            if ([[NSFileManager defaultManager] fileExistsAtPath:temppath isDirectory:NULL]) {
-                [[NSFileManager defaultManager] removeItemAtPath:temppath error:NULL];
-            }
+
+            NSString *filename = [NSString stringWithFormat:@"SCVideoEditCut-%ld.mp4", (long)i];
+            NSURL *tempPath = [LZVideoTools filePathWithFileName:filename];
             
             CMTime start = CMTimeMakeWithSeconds(segment.startTime.floatValue, segment.duration.timescale);
             CMTime duration = CMTimeMakeWithSeconds(segment.endTime.floatValue - segment.startTime.floatValue, segment.asset.duration.timescale);
             CMTimeRange range = CMTimeRangeMake(start, duration);
             
             dispatch_group_enter(serviceGroup);
-            [LZVideoTools compressVideo:segment.asset videoComposition:nil outputFilePath:temppath timeRange:range completion:^(NSURL *savedPath) {
-                SCRecordSessionSegment * newSegment = [[SCRecordSessionSegment alloc] initWithURL:[NSURL fileURLWithPath:temppath] info:nil];
-                DLog(@"剪切url:%@", temppath);
+            [LZVideoTools exportVideo:segment.asset videoComposition:nil filePath:tempPath timeRange:range completion:^(NSURL *savedPath) {
+                SCRecordSessionSegment * newSegment = [[SCRecordSessionSegment alloc] initWithURL:tempPath info:nil];
+                DLog(@"剪切url:%@", [tempPath path]);
                 
                 newSegment.startTime = nil;
                 newSegment.endTime = nil;

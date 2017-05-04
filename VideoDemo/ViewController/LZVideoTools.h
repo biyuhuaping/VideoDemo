@@ -13,13 +13,13 @@
 @interface LZVideoTools : NSObject
 
 /**
- 视频剪切+导出
+ 视频压缩+剪切+导出
  
  @param selectSegment 所选视频资源
- @param outputFilePath 导出路径
+ @param filePath 文件路径
  @param completion 完成回调
  */
-+ (void)cutVideoWith:(SCRecordSessionSegment *)selectSegment outputFilePath:(NSString *)outputFilePath completion:(void (^)(void))completion;
++ (void)cutVideoWith:(SCRecordSessionSegment *)selectSegment filePath:(NSURL *)filePath completion:(void (^)(void))completion;
 
 
 /**
@@ -27,10 +27,12 @@
  
  @param asset 视频资源
  @param videoComposition 视频合成物
- @param path 导出路径
+ @param filePath 文件路径
  @param range 时长范围
  @param completion 完成回调
  */
-+ (void)compressVideo:(AVAsset *)asset videoComposition:(AVVideoComposition *)videoComposition outputFilePath:(NSString *)path timeRange:(CMTimeRange)range completion:(void (^)(NSURL *savedPath))completion;
++ (void)exportVideo:(AVAsset *)asset videoComposition:(AVVideoComposition *)videoComposition filePath:(NSURL *)filePath timeRange:(CMTimeRange)range completion:(void (^)(NSURL *savedPath))completion;
+
++ (NSURL *)filePathWithFileName:(NSString *)fileName;
 
 @end

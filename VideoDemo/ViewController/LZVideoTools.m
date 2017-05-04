@@ -11,13 +11,13 @@
 @implementation LZVideoTools
 
 /**
- 视频剪切+导出
+ 视频压缩+剪切+导出
 
  @param selectSegment 所选视频资源
  @param outputFilePath 导出路径
  @param completion 完成回调
  */
-+ (void)cutVideoWith:(SCRecordSessionSegment *)selectSegment outputFilePath:(NSString *)outputFilePath completion:(void (^)(void))completion{
++ (void)cutVideoWith:(SCRecordSessionSegment *)selectSegment filePath:(NSURL *)filePath completion:(void (^)(void))completion{
     
 //    1.将素材拖入到素材库中
     AVAsset *asset = selectSegment.asset;
@@ -66,7 +66,7 @@
     CMTimeRange range = CMTimeRangeMake(start, duration);
 
     
-    [self compressVideo:composition videoComposition:mainComposition outputFilePath:outputFilePath timeRange:range completion:^(NSURL *savedPath) {
+    [self exportVideo:composition videoComposition:mainComposition filePath:filePath timeRange:range completion:^(NSURL *savedPath) {
         if (completion) {
             completion();
             DLog(@"视频导出成功：%@", savedPath);
@@ -84,10 +84,12 @@
  @param range 时长范围
  @param completion 完成回调
  */
-+ (void)compressVideo:(AVAsset *)asset videoComposition:(AVVideoComposition *)videoComposition outputFilePath:(NSString *)path timeRange:(CMTimeRange)range completion:(void (^)(NSURL *savedPath))completion {
++ (void)exportVideo:(AVAsset *)asset videoComposition:(AVVideoComposition *)videoComposition filePath:(NSURL *)filePath timeRange:(CMTimeRange)range completion:(void (^)(NSURL *savedPath))completion {
+    
+    //导出
     AVAssetExportSession *session = [[AVAssetExportSession alloc] initWithAsset:asset presetName:AVAssetExportPresetHighestQuality];
     session.videoComposition = videoComposition;
-    session.outputURL = [NSURL fileURLWithPath:path];
+    session.outputURL = filePath;
     session.shouldOptimizeForNetworkUse = YES;
     session.outputFileType = AVFileTypeMPEG4;//AVFileTypeQuickTimeMovie
     session.timeRange = range;
@@ -108,6 +110,23 @@
             });
         }
     }];
+}
+
++ (NSURL *)filePathWithFileName:(NSString *)fileName {
+    //配置文件路径
+    NSString * tempPath = NSTemporaryDirectory();
+    tempPath = [tempPath stringByAppendingPathComponent:@"SCVideo"];
+    NSFileManager *manager = [NSFileManager defaultManager];
+    BOOL exists = [manager fileExistsAtPath:tempPath isDirectory:NULL];
+    if (!exists) {
+        [manager createDirectoryAtPath:tempPath withIntermediateDirectories:YES attributes:nil error:NULL];
+    }
+    
+    tempPath = [tempPath stringByAppendingPathComponent:fileName];
+    if ([manager fileExistsAtPath:tempPath isDirectory:NULL]) {
+        [manager removeItemAtPath:tempPath error:NULL];
+    }
+    return [NSURL fileURLWithPath:tempPath];
 }
 
 @end

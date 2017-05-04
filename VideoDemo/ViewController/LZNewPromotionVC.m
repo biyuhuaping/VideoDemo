@@ -82,6 +82,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc{
+    [self removeCompressedVideoFromDocuments];
+}
+
+/**
+ *  清除沙盒文件中, 所有压缩后的视频（使用过压缩文件后, 不进行再次使用时, 可调用该方法, 进行删除）
+ */
+
+- (void)removeCompressedVideoFromDocuments {
+    NSString * temppath = NSTemporaryDirectory();
+    temppath = [temppath stringByAppendingPathComponent:@"SCVideo"];
+    
+    NSFileManager *manager = [NSFileManager defaultManager];
+    if ([manager fileExistsAtPath:temppath]) {
+        [manager removeItemAtPath:temppath error:nil];
+    }
+}
+
 #pragma mark - configViews
 //配置navi
 - (void)configNavigationBar{

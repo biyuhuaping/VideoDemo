@@ -143,28 +143,20 @@
 - (void)cutVideo {
     NSArray *compatiblePresets = [AVAssetExportSession exportPresetsCompatibleWithAsset:self.selectSegment.asset];
     if ([compatiblePresets containsObject:AVAssetExportPresetHighestQuality]) {
-        
-        __block NSString * temppath = NSTemporaryDirectory();
-        temppath = [temppath stringByAppendingPathComponent:@"SCVideo"];
-        BOOL exists = [[NSFileManager defaultManager] fileExistsAtPath:temppath isDirectory:NULL];
-        if (!exists) {
-            [[NSFileManager defaultManager] createDirectoryAtPath:temppath withIntermediateDirectories:YES attributes:nil error:NULL];
-        }
-        
-        NSString *filename = [NSString stringWithFormat:@"SCVideoCut.%ld.mp4", self.recordSegments.count-1];
-        temppath = [temppath stringByAppendingPathComponent:filename];
-        if ([[NSFileManager defaultManager] fileExistsAtPath:temppath isDirectory:NULL]) {
-            [[NSFileManager defaultManager] removeItemAtPath:temppath error:NULL];
-        }
-        
+        NSURL *tempPath = [LZVideoTools filePathWithFileName:@"ConponVideo.mp4"];
         WS(weakSelf);
-        [LZVideoTools cutVideoWith:self.selectSegment outputFilePath:temppath completion:^{
-            SCRecordSessionSegment * newSegment = [[SCRecordSessionSegment alloc] initWithURL:[NSURL fileURLWithPath:temppath] info:nil];
+        [LZVideoTools cutVideoWith:self.selectSegment filePath:tempPath completion:^{
+            SCRecordSessionSegment * newSegment = [[SCRecordSessionSegment alloc] initWithURL:tempPath info:nil];
             [weakSelf.recordSession addSegment:newSegment];
             [weakSelf.navigationController popViewControllerAnimated:YES];
         }];
     }
 }
+
+- (void)FileManager{
+    
+}
+
 
 #pragma mark - Event
 - (void)nextButtonAction:(UIButton *)sender {
