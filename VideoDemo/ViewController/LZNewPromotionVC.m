@@ -22,6 +22,8 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <MediaPlayer/MediaPlayer.h>
 
+#import "ClearCacheTool.h"
+
 @interface LZNewPromotionVC ()<SCRecorderDelegate>
 @property (strong, nonatomic) IBOutlet UIView *previewView;         //试映view
 @property (strong, nonatomic) IBOutlet LZGridView *girdView;        //网格view
@@ -83,21 +85,8 @@
 }
 
 - (void)dealloc{
-    [self removeCompressedVideoFromDocuments];
-}
-
-/**
- *  清除沙盒文件中, 所有压缩后的视频（使用过压缩文件后, 不进行再次使用时, 可调用该方法, 进行删除）
- */
-
-- (void)removeCompressedVideoFromDocuments {
-    NSString * temppath = NSTemporaryDirectory();
-    temppath = [temppath stringByAppendingPathComponent:@"SCVideo"];
-    
-    NSFileManager *manager = [NSFileManager defaultManager];
-    if ([manager fileExistsAtPath:temppath]) {
-        [manager removeItemAtPath:temppath error:nil];
-    }
+    //清除缓存
+    [ClearCacheTool clearAction];
 }
 
 #pragma mark - configViews

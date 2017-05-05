@@ -33,6 +33,14 @@
  */
 + (void)exportVideo:(AVAsset *)asset videoComposition:(AVVideoComposition *)videoComposition filePath:(NSURL *)filePath timeRange:(CMTimeRange)range completion:(void (^)(NSURL *savedPath))completion;
 
+
+
+/**
+ 配置文件路径
+
+ @param fileName 文件名称
+ @return 文件路径
+ */
 + (NSURL *)filePathWithFileName:(NSString *)fileName;
 
 @end

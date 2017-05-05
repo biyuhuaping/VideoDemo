@@ -16,7 +16,6 @@
 		FB69C4221EB96ADD007B38BD /* VideoDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C4211EB96ADD007B38BD /* VideoDemoUITests.m */; };
 		FB69C44C1EB96ED2007B38BD /* LZNewPromotionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C4311EB96ED1007B38BD /* LZNewPromotionVC.m */; };
 		FB69C44D1EB96ED2007B38BD /* LZNewPromotionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB69C4321EB96ED1007B38BD /* LZNewPromotionVC.xib */; };
-		FB69C44E1EB96ED2007B38BD /* LZVideoTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C4341EB96ED1007B38BD /* LZVideoTools.m */; };
 		FB69C44F1EB96ED2007B38BD /* LZSelectVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C4371EB96ED2007B38BD /* LZSelectVideoViewController.m */; };
 		FB69C4501EB96ED2007B38BD /* LZTrimCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C43A1EB96ED2007B38BD /* LZTrimCropViewController.m */; };
 		FB69C4511EB96ED2007B38BD /* LZVideoDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C43D1EB96ED2007B38BD /* LZVideoDetailsVC.m */; };
@@ -87,6 +86,8 @@
 		FB69C5231EB9B690007B38BD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB69C5221EB9B690007B38BD /* ViewController.xib */; };
 		FB69C5271EB9C1DF007B38BD /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C5261EB9C1DF007B38BD /* UINavigationController+FDFullscreenPopGesture.m */; };
 		FB69C5291EBAD0CC007B38BD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB69C5281EBAD0CC007B38BD /* MobileCoreServices.framework */; };
+		FB69C52E1EBC4588007B38BD /* LZVideoTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C52D1EBC4588007B38BD /* LZVideoTools.m */; };
+		FB69C5311EBC45A5007B38BD /* ClearCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C5301EBC45A5007B38BD /* ClearCacheTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,8 +126,6 @@
 		FB69C4301EB96ED1007B38BD /* LZNewPromotionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNewPromotionVC.h; sourceTree = "<group>"; };
 		FB69C4311EB96ED1007B38BD /* LZNewPromotionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNewPromotionVC.m; sourceTree = "<group>"; };
 		FB69C4321EB96ED1007B38BD /* LZNewPromotionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LZNewPromotionVC.xib; sourceTree = "<group>"; };
-		FB69C4331EB96ED1007B38BD /* LZVideoTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVideoTools.h; sourceTree = "<group>"; };
-		FB69C4341EB96ED1007B38BD /* LZVideoTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVideoTools.m; sourceTree = "<group>"; };
 		FB69C4361EB96ED2007B38BD /* LZSelectVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSelectVideoViewController.h; sourceTree = "<group>"; };
 		FB69C4371EB96ED2007B38BD /* LZSelectVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZSelectVideoViewController.m; sourceTree = "<group>"; };
 		FB69C4391EB96ED2007B38BD /* LZTrimCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTrimCropViewController.h; sourceTree = "<group>"; };
@@ -265,6 +264,10 @@
 		FB69C5251EB9C1DF007B38BD /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		FB69C5261EB9C1DF007B38BD /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		FB69C5281EBAD0CC007B38BD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		FB69C52C1EBC4588007B38BD /* LZVideoTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZVideoTools.h; sourceTree = "<group>"; };
+		FB69C52D1EBC4588007B38BD /* LZVideoTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVideoTools.m; sourceTree = "<group>"; };
+		FB69C52F1EBC45A5007B38BD /* ClearCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearCacheTool.h; sourceTree = "<group>"; };
+		FB69C5301EBC45A5007B38BD /* ClearCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearCacheTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +328,7 @@
 				FB69C4021EB96ADC007B38BD /* ViewController.h */,
 				FB69C4031EB96ADC007B38BD /* ViewController.m */,
 				FB69C5221EB9B690007B38BD /* ViewController.xib */,
+				FB69C52B1EBC4588007B38BD /* Tools */,
 				FB69C5121EB98675007B38BD /* Category */,
 				FB69C46A1EB975EE007B38BD /* Lib */,
 				FB69C42F1EB96ED1007B38BD /* ViewController */,
@@ -371,8 +375,6 @@
 				FB69C4301EB96ED1007B38BD /* LZNewPromotionVC.h */,
 				FB69C4311EB96ED1007B38BD /* LZNewPromotionVC.m */,
 				FB69C4321EB96ED1007B38BD /* LZNewPromotionVC.xib */,
-				FB69C4331EB96ED1007B38BD /* LZVideoTools.h */,
-				FB69C4341EB96ED1007B38BD /* LZVideoTools.m */,
 				FB69C43B1EB96ED2007B38BD /* VideoDetail(视频详情) */,
 				FB69C43F1EB96ED2007B38BD /* VideoEdit(视频编辑) */,
 				FB69C4351EB96ED2007B38BD /* SelectVideo(选择视频) */,
@@ -659,6 +661,17 @@
 			path = FDFullscreenPopGesture;
 			sourceTree = "<group>";
 		};
+		FB69C52B1EBC4588007B38BD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FB69C52C1EBC4588007B38BD /* LZVideoTools.h */,
+				FB69C52D1EBC4588007B38BD /* LZVideoTools.m */,
+				FB69C52F1EBC45A5007B38BD /* ClearCacheTool.h */,
+				FB69C5301EBC45A5007B38BD /* ClearCacheTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -821,12 +834,13 @@
 				FB69C4F91EB975EE007B38BD /* SCVideoConfiguration.m in Sources */,
 				FB69C4F51EB975EE007B38BD /* SCRecordSessionSegment.m in Sources */,
 				FB69C4E31EB975EE007B38BD /* SCAudioTools.m in Sources */,
-				FB69C44E1EB96ED2007B38BD /* LZVideoTools.m in Sources */,
 				FB69C5151EB98675007B38BD /* SCRecordSessionSegment+LZAdd.m in Sources */,
 				FB69C4041EB96ADC007B38BD /* ViewController.m in Sources */,
 				FB69C4FE1EB975EE007B38BD /* README.md in Sources */,
 				FB69C4F41EB975EE007B38BD /* SCRecordSession.m in Sources */,
+				FB69C5311EBC45A5007B38BD /* ClearCacheTool.m in Sources */,
 				FB69C5271EB9C1DF007B38BD /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				FB69C52E1EBC4588007B38BD /* LZVideoTools.m in Sources */,
 				FB69C4F21EB975EE007B38BD /* SCRecorderTools.m in Sources */,
 				FB69C4681EB97467007B38BD /* ProgressBar.m in Sources */,
 				FB69C4DD1EB975EE007B38BD /* README.md in Sources */,
@@ -1112,6 +1126,7 @@
 				FB69C4281EB96ADD007B38BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB69C4291EB96ADD007B38BD /* Build configuration list for PBXNativeTarget "VideoDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -1120,6 +1135,7 @@
 				FB69C42B1EB96ADD007B38BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB69C42C1EB96ADD007B38BD /* Build configuration list for PBXNativeTarget "VideoDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -1128,6 +1144,7 @@
 				FB69C42E1EB96ADD007B38BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

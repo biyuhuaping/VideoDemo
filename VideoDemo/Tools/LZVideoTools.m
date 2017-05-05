@@ -12,9 +12,9 @@
 
 /**
  视频压缩+剪切+导出
-
+ 
  @param selectSegment 所选视频资源
- @param outputFilePath 导出路径
+ @param filePath 文件路径
  @param completion 完成回调
  */
 + (void)cutVideoWith:(SCRecordSessionSegment *)selectSegment filePath:(NSURL *)filePath completion:(void (^)(void))completion{
@@ -77,10 +77,10 @@
 
 /**
  导出视频
-
+ 
  @param asset 视频资源
  @param videoComposition 视频合成物
- @param path 导出路径
+ @param filePath 文件路径
  @param range 时长范围
  @param completion 完成回调
  */
@@ -112,8 +112,14 @@
     }];
 }
 
+
+/**
+ 配置文件路径
+ 
+ @param fileName 文件名称
+ @return 文件路径
+ */
 + (NSURL *)filePathWithFileName:(NSString *)fileName {
-    //配置文件路径
     NSString * tempPath = NSTemporaryDirectory();
     tempPath = [tempPath stringByAppendingPathComponent:@"SCVideo"];
     NSFileManager *manager = [NSFileManager defaultManager];
