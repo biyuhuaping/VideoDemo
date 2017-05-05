@@ -10,6 +10,9 @@
 
 @implementation ClearCacheTool
 
+/**
+ 清除缓存
+ */
 //触发清除缓存事件
 + (void)clearAction{
     NSString *path1 = NSTemporaryDirectory();
