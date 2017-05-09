@@ -88,6 +88,8 @@
 		FB69C5291EBAD0CC007B38BD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB69C5281EBAD0CC007B38BD /* MobileCoreServices.framework */; };
 		FB69C52E1EBC4588007B38BD /* LZVideoTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C52D1EBC4588007B38BD /* LZVideoTools.m */; };
 		FB69C5311EBC45A5007B38BD /* ClearCacheTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C5301EBC45A5007B38BD /* ClearCacheTool.m */; };
+		FB69C5421EC01CA1007B38BD /* a_filter.cisf in Resources */ = {isa = PBXBuildFile; fileRef = FB69C5411EC01CA1007B38BD /* a_filter.cisf */; };
+		FB69C5451EC1667F007B38BD /* SCWatermarkOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C5441EC1667F007B38BD /* SCWatermarkOverlayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -268,6 +270,9 @@
 		FB69C52D1EBC4588007B38BD /* LZVideoTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZVideoTools.m; sourceTree = "<group>"; };
 		FB69C52F1EBC45A5007B38BD /* ClearCacheTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClearCacheTool.h; sourceTree = "<group>"; };
 		FB69C5301EBC45A5007B38BD /* ClearCacheTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClearCacheTool.m; sourceTree = "<group>"; };
+		FB69C5411EC01CA1007B38BD /* a_filter.cisf */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = a_filter.cisf; sourceTree = "<group>"; };
+		FB69C5431EC1667F007B38BD /* SCWatermarkOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWatermarkOverlayView.h; sourceTree = "<group>"; };
+		FB69C5441EC1667F007B38BD /* SCWatermarkOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWatermarkOverlayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +414,8 @@
 				FB69C43C1EB96ED2007B38BD /* LZVideoDetailsVC.h */,
 				FB69C43D1EB96ED2007B38BD /* LZVideoDetailsVC.m */,
 				FB69C43E1EB96ED2007B38BD /* LZVideoDetailsVC.xib */,
+				FB69C5431EC1667F007B38BD /* SCWatermarkOverlayView.h */,
+				FB69C5441EC1667F007B38BD /* SCWatermarkOverlayView.m */,
 			);
 			path = "VideoDetail(视频详情)";
 			sourceTree = "<group>";
@@ -525,6 +532,7 @@
 				FB69C48E1EB975EE007B38BD /* Library */,
 				FB69C4CD1EB975EE007B38BD /* LICENSE */,
 				FB69C4CE1EB975EE007B38BD /* README.md */,
+				FB69C5411EC01CA1007B38BD /* a_filter.cisf */,
 			);
 			path = SCRecorder;
 			sourceTree = "<group>";
@@ -783,6 +791,7 @@
 			files = (
 				FB69C5231EB9B690007B38BD /* ViewController.xib in Resources */,
 				FB69C40C1EB96ADD007B38BD /* LaunchScreen.storyboard in Resources */,
+				FB69C5421EC01CA1007B38BD /* a_filter.cisf in Resources */,
 				FB69C44D1EB96ED2007B38BD /* LZNewPromotionVC.xib in Resources */,
 				FB69C4FD1EB975EE007B38BD /* LICENSE in Resources */,
 				FB69C4551EB96ED2007B38BD /* LZVideoEditClipVC.xib in Resources */,
@@ -823,6 +832,7 @@
 				FB69C4DE1EB975EE007B38BD /* LZImageView.m in Sources */,
 				FB69C4F81EB975EE007B38BD /* SCSwipeableFilterView.m in Sources */,
 				FB69C4EB1EB975EE007B38BD /* SCIOPixelBuffers.m in Sources */,
+				FB69C5451EC1667F007B38BD /* SCWatermarkOverlayView.m in Sources */,
 				FB69C4511EB96ED2007B38BD /* LZVideoDetailsVC.m in Sources */,
 				FB69C4D41EB975EE007B38BD /* MASConstraint.m in Sources */,
 				FB69C4D71EB975EE007B38BD /* MASViewAttribute.m in Sources */,

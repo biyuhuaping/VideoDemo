@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LZVideoDetailsVC">
             <connections>
-                <outlet property="videoPlayerView" destination="kNV-rV-W2U" id="ynW-QJ-lmY"/>
+                <outlet property="filterSwitcherView" destination="kNV-rV-W2U" id="9CF-vA-y3x"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,7 +21,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNV-rV-W2U" customClass="SCVideoPlayerView">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNV-rV-W2U" customClass="SCSwipeableFilterView">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
