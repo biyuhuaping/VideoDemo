@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="cancelButton" destination="JGT-Zp-7Nw" id="eHG-tz-suh"/>
                 <outlet property="confirmButton" destination="72Y-ht-z9P" id="RER-dT-qVj"/>
+                <outlet property="focusView" destination="lwV-zg-OGU" id="YHe-AI-XLs"/>
                 <outlet property="ghostImageView" destination="JMy-kw-3j3" id="a5v-Pf-I6e"/>
                 <outlet property="girdView" destination="s4r-Er-HdQ" id="pGv-KZ-Ero"/>
                 <outlet property="gridOrlineButton" destination="oYL-lC-4WG" id="0Ch-mC-foc"/>
@@ -32,9 +33,19 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nbh-Xr-mn6">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwV-zg-OGU" customClass="SCRecorderToolsView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="lwV-zg-OGU" secondAttribute="bottom" id="PXl-se-KEd"/>
                         <constraint firstAttribute="width" secondItem="Nbh-Xr-mn6" secondAttribute="height" multiplier="1:1" id="Yqz-zF-ThY"/>
+                        <constraint firstItem="lwV-zg-OGU" firstAttribute="leading" secondItem="Nbh-Xr-mn6" secondAttribute="leading" id="bbS-HC-KoS"/>
+                        <constraint firstAttribute="trailing" secondItem="lwV-zg-OGU" secondAttribute="trailing" id="e5v-VR-E8D"/>
+                        <constraint firstItem="lwV-zg-OGU" firstAttribute="top" secondItem="Nbh-Xr-mn6" secondAttribute="top" id="kFZ-1Q-dsZ"/>
                     </constraints>
                 </view>
                 <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JMy-kw-3j3">

@@ -30,6 +30,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *ghostImageView; //快照imageView
 @property (strong, nonatomic) IBOutlet LZLevelView *levelView;      //水平仪view
 @property (strong, nonatomic) IBOutlet ProgressBar *progressBar;    //进度条
+@property (strong, nonatomic) IBOutlet SCRecorderToolsView *focusView;
 
 
 @property (strong, nonatomic) IBOutlet UIButton *cancelButton;      //删除按钮
@@ -119,6 +120,10 @@
     SCRecordSession *session = [SCRecordSession recordSession];
     session.fileType = AVFileTypeMPEG4;
     _recorder.session = session;
+    
+    self.focusView.recorder = _recorder;
+    self.focusView.outsideFocusTargetImage = [UIImage imageNamed:@"lz_recorder_change_hd"];
+    self.focusView.insideFocusTargetImage = [UIImage imageNamed:@"lz_recorder_change"];
 }
 
 - (void)enumVideoUrl {
