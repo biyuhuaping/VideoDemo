@@ -247,7 +247,6 @@
     //更新进度条
     [self.videoEditAuxiliary updateProgressBar:self.progressBar :self.recordSegments];
     
-    
     //更新剪切片段
     [self.videoEditAuxiliary updateTrimmerView:self.trimmerView recordSegments:self.recordSegments index:self.currentSelected];
     

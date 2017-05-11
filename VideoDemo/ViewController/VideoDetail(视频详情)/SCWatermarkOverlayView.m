@@ -22,12 +22,12 @@
     if (self) {
         _watermarkLabel = [UILabel new];
         _watermarkLabel.textColor = [UIColor whiteColor];
-        _watermarkLabel.font = [UIFont boldSystemFontOfSize:36];
+        _watermarkLabel.font = [UIFont boldSystemFontOfSize:30];
         _watermarkLabel.text = @"小笨鸟 © SCRecorder";
         
         _timeLabel = [UILabel new];
         _timeLabel.textColor = [UIColor yellowColor];
-        _timeLabel.font = [UIFont boldSystemFontOfSize:36];
+        _timeLabel.font = [UIFont boldSystemFontOfSize:30];
         
         [self addSubview:_watermarkLabel];
         [self addSubview:_timeLabel];

@@ -203,14 +203,15 @@
                 [[UIApplication sharedApplication] endIgnoringInteractionEvents];
                 
                 if (error == nil) {
-                    [[[UIAlertView alloc] initWithTitle:@"Saved to camera roll" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+                    [[[UIAlertView alloc] initWithTitle:@"已保存到相机卷" message:@"" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+                    [self.navigationController popViewControllerAnimated:YES];
                 } else {
-                    [[[UIAlertView alloc] initWithTitle:@"Failed to save" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+                    [[[UIAlertView alloc] initWithTitle:@"保存失败" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
                 }
             }];
         } else {
             if (!exportSession.cancelled) {
-                [[[UIAlertView alloc] initWithTitle:@"Failed to save" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+                [[[UIAlertView alloc] initWithTitle:@"保存失败" message:error.localizedDescription delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
             }
         }
     }];

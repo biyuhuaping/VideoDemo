@@ -115,7 +115,7 @@
     _recorder.delegate = self;
     _recorder.autoSetVideoOrientation = NO;
     _recorder.previewView = self.previewView;
-
+    
     //初始Session
     SCRecordSession *session = [SCRecordSession recordSession];
     session.fileType = AVFileTypeMPEG4;
@@ -123,7 +123,7 @@
     
     self.focusView.recorder = _recorder;
     self.focusView.outsideFocusTargetImage = [UIImage imageNamed:@"lz_recorder_change_hd"];
-    self.focusView.insideFocusTargetImage = [UIImage imageNamed:@"lz_recorder_change"];
+//    self.focusView.insideFocusTargetImage = [UIImage imageNamed:@"lz_recorder_change"];
 }
 
 - (void)enumVideoUrl {

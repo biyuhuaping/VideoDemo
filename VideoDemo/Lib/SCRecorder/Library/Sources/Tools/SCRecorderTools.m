@@ -136,7 +136,7 @@
     AVMutableMetadataItem *software = [AVMutableMetadataItem new];
     software.keySpace = AVMetadataKeySpaceCommon;
     software.key = AVMetadataCommonKeySoftware;
-    software.value = @"XBN";
+    software.value = @"SCRecorder";
     
     return @[software, creationDate];
 }
