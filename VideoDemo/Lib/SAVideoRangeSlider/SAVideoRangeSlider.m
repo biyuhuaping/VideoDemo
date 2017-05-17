@@ -126,7 +126,7 @@
     [self addSubview:_rightThumb];
     
     UIPanGestureRecognizer *rightPan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handleRightPan:)];
-    [_rightThumb addGestureRecognizer:rightPan];    
+    [_rightThumb addGestureRecognizer:rightPan];
 }
 
 - (void)setMaxGap:(CGFloat)maxGap {
@@ -141,10 +141,11 @@
     _minGap = minGap;
 }
 
-- (void)delegateNotification
+//left：是左边动的
+- (void)delegateNotification:(BOOL)isLeft
 {
-    if ([_delegate respondsToSelector:@selector(videoRange:didChangeLeftPosition:rightPosition:)]){
-        [_delegate videoRange:self didChangeLeftPosition:self.leftPosition rightPosition:self.rightPosition];
+    if ([_delegate respondsToSelector:@selector(videoRange:isLeft:didChangeLeftPosition:rightPosition:)]){
+        [_delegate videoRange:self isLeft:isLeft didChangeLeftPosition:self.leftPosition rightPosition:self.rightPosition];
     }
 }
 
@@ -173,7 +174,7 @@
         [gesture setTranslation:CGPointZero inView:self];
         [self setNeedsLayout];
         
-        [self delegateNotification];
+        [self delegateNotification:YES];
     }
     
     if (gesture.state == UIGestureRecognizerStateEnded){
@@ -209,7 +210,7 @@
         [gesture setTranslation:CGPointZero inView:self];
         [self setNeedsLayout];
         
-        [self delegateNotification];
+        [self delegateNotification:NO];
     }
     
     if (gesture.state == UIGestureRecognizerStateEnded){
@@ -235,7 +236,7 @@
         [gesture setTranslation:CGPointZero inView:self];
         [self setNeedsLayout];
         
-        [self delegateNotification];
+        [self delegateNotification:YES];
     }
     
     if (gesture.state == UIGestureRecognizerStateEnded){
@@ -292,7 +293,7 @@
     } else {
         self.imageGenerator.maximumSize = CGSizeMake(self.bgView.frame.size.width, self.bgView.frame.size.height);
     }
-
+    
     int picWidth = 20;
     
     // First image
@@ -304,7 +305,7 @@
         } else {
             videoScreen = [[UIImage alloc] initWithCGImage:halfWayImage];
         }
-    
+        
         UIImageView *tmp = [[UIImageView alloc] initWithImage:videoScreen];
         CGRect rect = tmp.frame;
         rect.size.width = picWidth;
@@ -346,7 +347,7 @@
             } else {
                 videoScreen = [[UIImage alloc] initWithCGImage:halfWayImage];
             }
-        
+            
             UIImageView *tmp = [[UIImageView alloc] initWithImage:videoScreen];
             
             CGRect currentFrame = tmp.frame;

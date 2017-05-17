@@ -133,13 +133,6 @@
 }
 
 #pragma mark - PlaybackTimeCheckerTimer
-//控制快进，后退
-- (void)seekVideoToPos
-{
-    CMTime time = CMTimeMakeWithSeconds(self.selectSegment.startTime.floatValue, self.videoPlayerView.player.currentTime.timescale);
-    [self.videoPlayerView.player seekToTime:time toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero];
-}
-
 - (void)cutVideo {
     NSArray *compatiblePresets = [AVAssetExportSession exportPresetsCompatibleWithAsset:self.selectSegment.asset];
     if ([compatiblePresets containsObject:AVAssetExportPresetHighestQuality]) {
@@ -164,8 +157,7 @@
 }
 
 #pragma mark - SAVideoRangeSliderDelegate
-- (void)videoRange:(SAVideoRangeSlider *)videoRange didChangeLeftPosition:(CGFloat)leftPosition rightPosition:(CGFloat)rightPosition
-{
+- (void)videoRange:(SAVideoRangeSlider *)videoRange isLeft:(BOOL)isLeft didChangeLeftPosition:(CGFloat)leftPosition rightPosition:(CGFloat)rightPosition {
     NSAssert(self.selectSegment.url != nil, @"segment must be non-nil");
     if(self.selectSegment) {
         [self.selectSegment setStartTime:[NSNumber numberWithFloat:leftPosition]];
@@ -176,7 +168,16 @@
         
         DLog(@"%f, %f", self.selectSegment.startTime.floatValue, self.selectSegment.endTime.floatValue);
         
-        [self seekVideoToPos];
+        
+        //控制快进，后退
+        float f = 0;
+        if (isLeft) {
+            f = self.selectSegment.startTime.floatValue;
+        }else{
+            f = self.selectSegment.endTime.floatValue;
+        }
+        CMTime time = CMTimeMakeWithSeconds(f, self.videoPlayerView.player.currentTime.timescale);
+        [self.videoPlayerView.player seekToTime:time toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero];
     }
 }
 
