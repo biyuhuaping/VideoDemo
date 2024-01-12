@@ -11,11 +11,9 @@
 
 @implementation LZSelectVideoCollectionViewCell
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
-    if (self)
-    {
+    if (self){
         self.backgroundColor = [UIColor lightTextColor];
         [self configView];
         [self addAutoLayout];
@@ -30,7 +28,6 @@
 }
 
 - (void)addAutoLayout {
-    
     [self.imageView makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(0);
         make.bottom.mas_equalTo(0);
@@ -53,27 +50,22 @@
 }
 
 - (UIImageView *)imageView {
-    
     if (_imageView == nil) {
         _imageView = [[UIImageView alloc] init];
     }
-    
     return _imageView;
 }
 
 - (UIView *)markView {
-    
     if (_markView == nil) {
         _markView = [[UIView alloc] init];
         _markView.backgroundColor = UIColorFromRGB(0x000000, 0.3);
         _markView.hidden = YES;
     }
-    
     return _markView;
 }
 
 - (UILabel *)timeLabel {
-
     if (_timeLabel == nil) {
         _timeLabel = [[UILabel alloc] init];
         _timeLabel.backgroundColor = UIColorFromRGB(0x000000, 0.5);
@@ -84,7 +76,7 @@
         _timeLabel.textAlignment = NSTextAlignmentCenter;
         _timeLabel.textColor = UIColorFromRGB(0xffffff, 1);
     }
-    
     return _timeLabel;
 }
+    
 @end

@@ -18,12 +18,11 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
-    
     if (self) {
         _watermarkLabel = [UILabel new];
         _watermarkLabel.textColor = [UIColor whiteColor];
         _watermarkLabel.font = [UIFont boldSystemFontOfSize:30];
-        _watermarkLabel.text = @"小笨鸟 © SCRecorder";
+        _watermarkLabel.text = @"©biyuhuaping";
         
         _timeLabel = [UILabel new];
         _timeLabel.textColor = [UIColor yellowColor];
@@ -32,7 +31,6 @@
         [self addSubview:_watermarkLabel];
         [self addSubview:_timeLabel];
     }
-    
     return self;
 }
 
@@ -40,7 +38,6 @@
     [super layoutSubviews];
         
     static const CGFloat inset = 8;
-    
     CGSize size = self.bounds.size;
     
     [_watermarkLabel sizeToFit];

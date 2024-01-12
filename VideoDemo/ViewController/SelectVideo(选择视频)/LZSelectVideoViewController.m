@@ -191,7 +191,6 @@
             cell.imageView.layer.borderColor = [UIColor clearColor].CGColor;
         }
     }
-    
     return cell;
 }
 
@@ -208,7 +207,6 @@
         _videoPlayerView.backgroundColor            = UIColorFromRGB(0x000000, 1);
         _videoPlayerView.playerLayer.videoGravity   = AVLayerVideoGravityResizeAspectFill;
     }
-    
     return _videoPlayerView;
 }
 
@@ -227,7 +225,6 @@
         self.collectionView.showsHorizontalScrollIndicator = NO;
         [self.collectionView registerClass:[LZSelectVideoCollectionViewCell class] forCellWithReuseIdentifier:@"SelectVideoCollectionCell"];
     }
-    
     return _collectionView;
 }
 
@@ -237,7 +234,6 @@
         [_nextButton setImage:[UIImage imageNamed:@"lz_musiclist_nextimage"] forState:UIControlStateNormal];
         [_nextButton addTarget:self action:@selector(nextButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     }
-    
     return _nextButton;
 }
 

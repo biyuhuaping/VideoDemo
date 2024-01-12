@@ -57,7 +57,6 @@
 		FB69C4671EB97467007B38BD /* LZLevelView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C45F1EB97467007B38BD /* LZLevelView.m */; };
 		FB69C4681EB97467007B38BD /* ProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C4621EB97467007B38BD /* ProgressBar.m */; };
 		FB69C4691EB97467007B38BD /* SBCaptureToolKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C4641EB97467007B38BD /* SBCaptureToolKit.m */; };
-		FB69C4D21EB975EE007B38BD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FB69C46C1EB975EE007B38BD /* LICENSE */; };
 		FB69C4D31EB975EE007B38BD /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C46F1EB975EE007B38BD /* MASCompositeConstraint.m */; };
 		FB69C4D41EB975EE007B38BD /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C4721EB975EE007B38BD /* MASConstraint.m */; };
 		FB69C4D51EB975EE007B38BD /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = FB69C4741EB975EE007B38BD /* MASConstraintMaker.m */; };
@@ -366,9 +365,9 @@
 				FB0E9AA71EC2E268005FE237 /* SCRecorder.h */,
 				FB0E9AA81EC2E268005FE237 /* SCRecorder.m */,
 				FB0E9AA91EC2E268005FE237 /* SCRecorderDelegate.h */,
+				FB0E9AAC1EC2E268005FE237 /* SCRecordSession_Internal.h */,
 				FB0E9AAA1EC2E268005FE237 /* SCRecordSession.h */,
 				FB0E9AAB1EC2E268005FE237 /* SCRecordSession.m */,
-				FB0E9AAC1EC2E268005FE237 /* SCRecordSession_Internal.h */,
 				FB0E9AAD1EC2E268005FE237 /* SCRecordSessionSegment.h */,
 				FB0E9AAE1EC2E268005FE237 /* SCRecordSessionSegment.m */,
 			);
@@ -803,7 +802,7 @@
 				TargetAttributes = {
 					FB69C3F81EB96ADC007B38BD = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = BNV27HH5PK;
+						DevelopmentTeam = KL9RJQL326;
 						ProvisioningStyle = Automatic;
 					};
 					FB69C4111EB96ADD007B38BD = {
@@ -822,7 +821,7 @@
 			};
 			buildConfigurationList = FB69C3F41EB96ADC007B38BD /* Build configuration list for PBXProject "VideoDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -852,7 +851,6 @@
 				FB69C4FD1EB975EE007B38BD /* LICENSE in Resources */,
 				FB69C4551EB96ED2007B38BD /* LZVideoEditClipVC.xib in Resources */,
 				FB69C50E1EB983E5007B38BD /* Localizable.strings in Resources */,
-				FB69C4D21EB975EE007B38BD /* LICENSE in Resources */,
 				FB69C4091EB96ADC007B38BD /* Assets.xcassets in Resources */,
 				FB69C4521EB96ED2007B38BD /* LZVideoDetailsVC.xib in Resources */,
 			);
@@ -1097,13 +1095,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BNV27HH5PK;
+				DEVELOPMENT_TEAM = KL9RJQL326;
 				GCC_PREFIX_HEADER = VideoDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = VideoDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhoubo.VideoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yes.GanodermaDiagnosis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -1112,13 +1110,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BNV27HH5PK;
+				DEVELOPMENT_TEAM = KL9RJQL326;
 				GCC_PREFIX_HEADER = VideoDemo/PrefixHeader.pch;
 				INFOPLIST_FILE = VideoDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhoubo.VideoDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yes.GanodermaDiagnosis;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
